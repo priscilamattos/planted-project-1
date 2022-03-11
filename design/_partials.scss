@@ -1,0 +1,86 @@
+// About Planted Section
+.aboutPlanted {
+  display: flex;
+  align-items: center;
+  height: 650px;
+  background-color: $plantedwhite;
+  text-align: center;
+  h2 {
+    @include titleStyle;
+    text-align: center;
+  }
+  p {
+    @include bodyText;
+    margin-bottom: 50px;
+  }
+  a {
+    @include buttonStyle;
+  }
+}
+
+// Blog Content
+article {
+  height: 400px;
+  position: relative;
+  .firstBlogContainer {
+    display: flex;
+    .boxImg {
+      position: absolute;
+      top: -40px;
+      margin: 0;
+      padding: 0;
+      width: 40%;
+      max-width: 600px;
+      img {
+        width: 100%;
+        box-shadow: 15px 15px $plantedYellow;
+      }
+    }
+    .blogPost {
+      width: 65%;
+      margin-left: 45%;
+      padding: 50px;
+      h3 {
+        @include headings;
+      }
+      p {
+        @include bodyText;
+        padding-right: 10%;
+        margin-bottom: 40px;
+      }
+      a {
+        @include buttonStyle;
+      }
+    }
+  }
+
+  .secondBlogContainer {
+    display: flex;
+    .boxImg {
+      position: absolute;
+      margin-right: 0;
+      padding-left: 45%;
+      width: 100%;
+      max-width: 600px;
+      img {
+        width: 100%;
+        box-shadow: 15px 15px $plantedYellow;
+      }
+    }
+    .blogPost {
+      width: 40%;
+      text-align: right;
+      h3 {
+        @include headings;
+      }
+      p {
+        @include bodyText;
+        padding-left: 10%;
+        margin-bottom: 40px;
+      }
+      a {
+        @include buttonStyle;
+      }
+    }
+  }
+}
