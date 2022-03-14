@@ -10,7 +10,7 @@
       href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300;400;700&family=Roboto&display=swap"
       rel="stylesheet"
     />
-    <link rel="stylesheet" href="./style.css" />
+    <link rel="stylesheet" href="/style.css" />
     <script
       src="https://kit.fontawesome.com/dbb28dec5b.js"
       crossorigin="anonymous"
@@ -19,26 +19,26 @@
   </head>
   <body>
     <header>
-      <div class="background">
-        <div class="wrapper">
-          <nav class="topNav">
-            <ul>
-              <li><a href="#">Planted</a></li>
-              <li><a href="#">HOME</a></li>
-              <li><a href="#">ABOUT</a></li>
-              <li><a href="#">BLOG</a></li>
-              <li><a href="#">CONTACT</a></li>
-            </ul>
-          </nav>
-        </div>
+      <div class="homeBackground">
+        <nav class="topNav">
+          <ul>
+            <li><a href="#">Planted</a></li>
+            <li><a href="#">HOME</a></li>
+            <li><a href="#">ABOUT</a></li>
+            <li><a href="#">BLOG</a></li>
+            <li><a href="#">CONTACT</a></li>
+          </ul>
+        </nav>
         <div class="plantedHeader">
           <div class="header">
-            <h1>Planted</h1>
-            <p>invitation</p>
+            <h1>Planted <span class="secondWord">invitation</span></h1>
           </div>
         </div>
         <figure class="headerImage">
-          <img src="./images/header-box.jpg" alt="header plant" />
+          <img
+            src="./Project-Folders/home/images/header-box.jpg"
+            alt="header plant"
+          />
         </figure>
       </div>
     </header>
@@ -51,8 +51,7 @@
             accumsan ex vitae vulputate posuere. Duis tempor condimentum diam,
             id tincidunt purus accumsan in. Phasellus bibendum nec leo vel
             finibus. Cras non bibendum libero. Pellentesque dapibus pellentesque
-            nisl quis consectetur. Sed tincidunt nibh eget odio ornare
-            pellentesque.
+            nisl quis consectetur.
           </p>
           <a href="#">Find Out More</a>
         </div>
@@ -61,7 +60,10 @@
         <article class="wrapper">
           <div class="firstBlogContainer">
             <figure class="boxImg">
-              <img src="./images/left-flowers.jpg" alt="Left Flowers" />
+              <img
+                src="./Project-Folders/home/images/left-flowers.jpg"
+                alt="Left Flowers"
+              />
             </figure>
             <div class="blogPost">
               <h3>Upcoming Workshops</h3>
@@ -88,28 +90,37 @@
               <a href="#">Read More</a>
             </div>
             <figure class="boxImg">
-              <img src="./images/right-flowers.jpg" alt="Right Flowers" />
+              <img
+                src="./Project-Folders/home/images/right-flowers.jpg"
+                alt="Right Flowers"
+              />
             </figure>
           </div>
         </article>
       </section>
-      <section class="contactContainer">
+      <section class="servicesContainer">
         <div class="wrapper">
           <div class="contentBox">
             <div class="services">
               <i class="fa-solid fa-leaf fa-lg" aria-hidden="true"></i>
               <h3>Green Houses</h3>
+            </div>
+            <div class="servicesText">
               <p>
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc
-                accumsan ex vitae vulputate posuere.
+                accumsan ex vitae vulputate posuere. Duis tempor condimentum
+                diam, id tincidunt purus accumsan in.
               </p>
             </div>
             <div class="services">
               <i class="fa-solid fa-file fa-lg" aria-hidden="true"></i>
               <h3>Blog</h3>
+            </div>
+            <div class="servicesText">
               <p>
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc
-                accumsan ex vitae vulputate posuere.
+                accumsan ex vitae vulputate posuere. Duis tempor condimentum
+                diam, id tincidunt purus accumsan in.
               </p>
             </div>
           </div>
@@ -117,29 +128,41 @@
             <div class="services">
               <i class="fa-solid fa-users fa-lg" aria-hidden="true"></i>
               <h3>Community</h3>
+            </div>
+            <div class="servicesText">
               <p>
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc
-                accumsan ex vitae vulputate posuere.
+                accumsan ex vitae vulputate posuere. Duis tempor condimentum
+                diam, id tincidunt purus accumsan in.
               </p>
             </div>
             <div class="services">
               <i class="fa-solid fa-phone-flip fa-lg" aria-hidden="true"></i>
               <h3>Get in Touch</h3>
+            </div>
+            <div class="servicesText">
               <p>
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc
-                accumsan ex vitae vulputate posuere.
+                accumsan ex vitae vulputate posuere. Duis tempor condimentum
+                diam, id tincidunt purus accumsan in.
               </p>
             </div>
           </div>
         </div>
       </section>
       <figure class="bannerHome">
-        <img src="./images/banner-image.jpg" alt="Home Banner" />
+        <img
+          src="./Project-Folders/home/images/banner-image.jpg"
+          alt="Home Banner"
+        />
       </figure>
       <section class="founderProfile">
         <div class="wrapper">
           <figure class="founderImg">
-            <img src="./images/founder.jpg" alt="Founder Image" />
+            <img
+              src="./Project-Folders/home/images/founder.jpg"
+              alt="Founder Image"
+            />
           </figure>
           <div class="founderText">
             <h3>Planted's Founder</h3>
@@ -153,10 +176,21 @@
           </div>
         </div>
       </section>
-      <section class="gallery wrapper">
-        <img src="./images/gallery-image-1.jpg" alt="Garden" />
-        <img src="./images/gallery-image-2.jpg" alt="Suculents" />
-        <img src="./images/gallery-image-3.jpg" alt="Cactus" />
+      <section class="gallery">
+        <div class="wrapper">
+          <img
+            src="./Project-Folders/home/images/gallery-image-1.jpg"
+            alt="Garden"
+          />
+          <img
+            src="./Project-Folders/home/images/gallery-image-2.jpg"
+            alt="Suculents"
+          />
+          <img
+            src="./Project-Folders/home/images/gallery-image-3.jpg"
+            alt="Cactus"
+          />
+        </div>
       </section>
     </main>
     <footer>

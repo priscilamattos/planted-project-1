@@ -1,3 +1,148 @@
+/* h1, h2, h3, h4 */
+/*Body and Buttons */
+body {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body a {
+  text-decoration: none;
+}
+
+footer {
+  background-color: #2c2c2c;
+}
+
+footer h5 {
+  font-family: "Roboto", sans-serif;
+  color: #f0efed;
+  text-align: center;
+  padding: 10px;
+  margin: 0;
+}
+
+.homeBackground {
+  background-image: url("Project-Folders/home/images/home-image-1.jpg");
+  background-repeat: no-repeat;
+  position: relative;
+  background-size: cover;
+}
+
+.homeBackground .topNav {
+  margin-left: 0;
+  width: 100%;
+  padding-left: 5%;
+  padding-top: 8px;
+  padding-bottom: 3px;
+  position: fixed;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: 10;
+}
+
+.homeBackground .topNav ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 50%;
+}
+
+.homeBackground .topNav ul li {
+  list-style: none;
+}
+
+.homeBackground .topNav ul li:first-child a {
+  font-size: 42px;
+  margin: 0;
+}
+
+.homeBackground .topNav ul li a {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  text-decoration: none;
+  color: #f0efed;
+  font-size: 20px;
+  letter-spacing: 1px;
+  font-family: "Josefin Sans", sans-serif;
+  font-weight: 400;
+}
+
+.homeBackground .topNav ul li a:hover {
+  color: #f8e71c;
+}
+
+.homeBackground .plantedHeader {
+  margin: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 100%;
+  height: 700px;
+}
+
+.homeBackground .plantedHeader .header {
+  width: 60%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin: auto;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+}
+
+.homeBackground .plantedHeader .header h1 {
+  font-family: "Josefin Sans", sans-serif;
+  font-size: 10rem;
+  color: #f0efed;
+  letter-spacing: 1.3px;
+  margin: 0;
+  z-index: 5;
+  display: inline;
+  text-align: left;
+}
+
+.homeBackground .plantedHeader .header h1 span {
+  color: #f8e71c;
+}
+
+.homeBackground .headerImage {
+  position: absolute;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  bottom: -60px;
+  right: 0;
+  margin: 0;
+  padding: 0;
+  max-width: 700px;
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.homeBackground .headerImage img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
 .aboutPlanted {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -10,34 +155,43 @@
   text-align: center;
 }
 
+.aboutPlanted .wrapper {
+  width: 90%;
+  margin: auto;
+}
+
 .aboutPlanted h2 {
   font-family: "Josefin Sans", sans-serif;
-  font-size: 56.3px;
+  font-size: 3.5rem;
   font-weight: bold;
   color: #2c2c2c;
-  letter-spacing: 1.3px;
+  letter-spacing: 0.08rem;
   text-align: center;
 }
 
 .aboutPlanted p {
   font-family: "Roboto", sans-serif;
-  font-size: 20px;
-  line-height: 32px;
+  font-size: 1.25rem;
+  line-height: 2rem;
   font-weight: 300;
   color: #2c2c2c;
-  margin-bottom: 50px;
+  padding: 0 10% 3%;
 }
 
 .aboutPlanted a {
   font-family: "Josefin Sans", sans-serif;
-  font-size: 20px;
-  line-height: 32px;
-  letter-spacing: 1px;
+  font-size: 1.25rem;
+  line-height: 2rem;
+  letter-spacing: 0.063rem;
   font-weight: 700;
   text-align: center;
   color: #f0efed;
   background-color: #0e902d;
   padding: 15px 20px;
+}
+
+.aboutPlanted a:hover {
+  background: #074115;
 }
 
 article {
@@ -79,32 +233,36 @@ article .firstBlogContainer .blogPost {
 
 article .firstBlogContainer .blogPost h3 {
   font-family: "Josefin Sans", sans-serif;
-  font-size: 32px;
-  letter-spacing: 1px;
+  font-size: 2rem;
+  letter-spacing: 0.063rem;
   font-weight: 700;
   color: #2c2c2c;
 }
 
 article .firstBlogContainer .blogPost p {
   font-family: "Roboto", sans-serif;
-  font-size: 20px;
-  line-height: 32px;
+  font-size: 1.25rem;
+  line-height: 2rem;
   font-weight: 300;
   color: #2c2c2c;
-  padding-right: 10%;
+  padding-right: 20%;
   margin-bottom: 40px;
 }
 
 article .firstBlogContainer .blogPost a {
   font-family: "Josefin Sans", sans-serif;
-  font-size: 20px;
-  line-height: 32px;
-  letter-spacing: 1px;
+  font-size: 1.25rem;
+  line-height: 2rem;
+  letter-spacing: 0.063rem;
   font-weight: 700;
   text-align: center;
   color: #f0efed;
   background-color: #0e902d;
   padding: 15px 20px;
+}
+
+article .firstBlogContainer .blogPost a:hover {
+  background: #074115;
 }
 
 article .secondBlogContainer {
@@ -142,27 +300,27 @@ article .secondBlogContainer .blogPost {
 
 article .secondBlogContainer .blogPost h3 {
   font-family: "Josefin Sans", sans-serif;
-  font-size: 32px;
-  letter-spacing: 1px;
+  font-size: 2rem;
+  letter-spacing: 0.063rem;
   font-weight: 700;
   color: #2c2c2c;
 }
 
 article .secondBlogContainer .blogPost p {
   font-family: "Roboto", sans-serif;
-  font-size: 20px;
-  line-height: 32px;
+  font-size: 1.25rem;
+  line-height: 2rem;
   font-weight: 300;
   color: #2c2c2c;
-  padding-left: 10%;
+  padding-left: 20%;
   margin-bottom: 40px;
 }
 
 article .secondBlogContainer .blogPost a {
   font-family: "Josefin Sans", sans-serif;
-  font-size: 20px;
-  line-height: 32px;
-  letter-spacing: 1px;
+  font-size: 1.25rem;
+  line-height: 2rem;
+  letter-spacing: 0.063rem;
   font-weight: 700;
   text-align: center;
   color: #f0efed;
@@ -170,7 +328,11 @@ article .secondBlogContainer .blogPost a {
   padding: 15px 20px;
 }
 
-.contactContainer {
+article .secondBlogContainer .blogPost a:hover {
+  background: #074115;
+}
+
+.servicesContainer {
   height: 800px;
   background-color: #f0efed;
   display: -webkit-box;
@@ -178,13 +340,18 @@ article .secondBlogContainer .blogPost a {
   display: flex;
 }
 
-.contactContainer .wrapper {
+.servicesContainer .wrapper {
+  width: 1280px;
+  margin: 10%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
-.contactContainer .contentBox {
+.servicesContainer .contentBox {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -194,21 +361,39 @@ article .secondBlogContainer .blogPost a {
           flex-direction: column;
 }
 
-.contactContainer .contentBox .services h3 {
-  font-family: "Josefin Sans", sans-serif;
-  font-size: 32px;
-  letter-spacing: 1px;
-  font-weight: 700;
-  color: #2c2c2c;
+.servicesContainer .contentBox .services {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
-.contactContainer .contentBox .services p {
+.servicesContainer .contentBox .services i::before {
+  background-color: #f8e71c;
+  padding: 15px;
+  border-radius: 50%;
+}
+
+.servicesContainer .contentBox .services h3 {
+  font-family: "Josefin Sans", sans-serif;
+  font-size: 2rem;
+  letter-spacing: 0.063rem;
+  font-weight: 700;
+  color: #2c2c2c;
+  margin-left: 15px;
+  cursor: pointer;
+}
+
+.servicesContainer .contentBox .servicesText p {
   font-family: "Roboto", sans-serif;
-  font-size: 20px;
-  line-height: 32px;
+  font-size: 1.25rem;
+  line-height: 2rem;
   font-weight: 300;
   color: #2c2c2c;
-  width: 70%;
+  width: 90%;
+  margin-top: 0;
 }
 
 .bannerHome {
@@ -223,18 +408,28 @@ article .secondBlogContainer .blogPost a {
 
 .founderProfile {
   background-color: #f0efed;
-  padding-top: 50px;
-  padding-bottom: 50px;
+  padding-top: 10px;
+  padding-bottom: 10px;
 }
 
 .founderProfile .wrapper {
+  max-width: 1280px;
+  margin: 10%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
 }
 
 .founderProfile .founderImg {
-  width: 30%;
+  margin: 0;
+  padding: 0;
+}
+
+.founderProfile .founderImg img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 
 .founderProfile .founderText {
@@ -246,12 +441,13 @@ article .secondBlogContainer .blogPost a {
       -ms-flex-direction: column;
           flex-direction: column;
   width: 60%;
+  padding-left: 5%;
 }
 
 .founderProfile .founderText h3 {
   font-family: "Josefin Sans", sans-serif;
-  font-size: 42px;
-  letter-spacing: 1px;
+  font-size: 2.6rem;
+  letter-spacing: 0.063rem;
   font-weight: 700;
   color: #2c2c2c;
   margin-bottom: 0;
@@ -259,8 +455,8 @@ article .secondBlogContainer .blogPost a {
 
 .founderProfile .founderText p {
   font-family: "Roboto", sans-serif;
-  font-size: 20px;
-  line-height: 32px;
+  font-size: 1.25rem;
+  line-height: 2rem;
   font-weight: 300;
   color: #2c2c2c;
   margin-bottom: 20px;
@@ -268,9 +464,9 @@ article .secondBlogContainer .blogPost a {
 
 .founderProfile .founderText a {
   font-family: "Josefin Sans", sans-serif;
-  font-size: 20px;
-  line-height: 32px;
-  letter-spacing: 1px;
+  font-size: 1.25rem;
+  line-height: 2rem;
+  letter-spacing: 0.063rem;
   font-weight: 700;
   text-align: center;
   color: #f0efed;
@@ -279,158 +475,22 @@ article .secondBlogContainer .blogPost a {
   width: 30%;
 }
 
-.gallery {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: space-evenly;
-      -ms-flex-pack: space-evenly;
-          justify-content: space-evenly;
-  padding-top: 50px;
-  padding-bottom: 50px;
+.founderProfile .founderText a:hover {
+  background: #074115;
 }
 
-.gallery img {
-  width: 30%;
-}
-
-footer {
-  background-color: #2c2c2c;
-  height: 50px;
-}
-
-footer h5 {
-  font-family: "Roboto", sans-serif;
-  font-size: 20px;
-  line-height: 32px;
-  font-weight: 300;
-  color: #2c2c2c;
-  color: #f0efed;
-  text-align: center;
-}
-
-.background {
-  background-image: url(../images/home-image-1.jpg);
-  background-size: cover;
-  height: 80vh;
-  position: relative;
-}
-
-.background .topNav {
-  padding-top: 10px;
-  width: 50%;
-}
-
-.background .topNav ul {
+.gallery .wrapper {
+  max-width: 1280px;
+  margin: 10%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  margin-left: 0;
 }
 
-.background .topNav ul li {
-  list-style: none;
-}
-
-.background .topNav ul li:first-child a {
-  font-size: 42px;
-  margin: 0;
-}
-
-.background .topNav ul li a {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  text-decoration: none;
-  color: #f0efed;
-  font-size: 20px;
-  letter-spacing: 1px;
-  font-family: "Josefin Sans", sans-serif;
-  font-weight: 400;
-}
-
-.background .topNav ul li a:hover {
-  color: #f8e71c;
-}
-
-.background .plantedHeader {
-  margin: auto;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  position: absolute;
-  width: 100%;
-  top: 0;
-  height: 100%;
-}
-
-.background .plantedHeader .header {
-  width: 100%;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  margin: auto;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-}
-
-.background .plantedHeader .header h1,
-.background .plantedHeader .header p {
-  font-family: "Josefin Sans", sans-serif;
-  font-size: 6rem;
-  font-weight: 400;
-  color: #f0efed;
-  letter-spacing: 1.3px;
-  margin: 0;
-  z-index: 5;
-  display: inline;
-  text-align: left;
-}
-
-.background .plantedHeader .header p {
-  color: #f8e71c;
-}
-
-.background .headerImage {
-  position: absolute;
-  right: 0px;
-  bottom: -70px;
-  margin: 0;
-  padding: 0;
-  width: 45%;
-  max-width: 700px;
-}
-
-.background .headerImage img {
-  width: 100%;
-}
-
-body {
-  margin: 0;
-  padding: 0;
-}
-
-body a {
-  text-decoration: none;
-}
-
-.wrapper {
-  max-width: 1260px;
-  width: 90%;
-  margin: auto;
+.gallery img {
+  width: 30%;
 }
 /*# sourceMappingURL=style.css.map */

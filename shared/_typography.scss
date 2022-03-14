@@ -1,0 +1,81 @@
+// Text
+$headFont: "Josefin Sans", sans-serif;
+$bodyFont: "Roboto", sans-serif;
+
+$plantedBlack: #2c2c2c;
+$plantedDarkGreen: #074115;
+$plantedGreen: #0e902d;
+$plantedYellow: #f8e71c;
+$plantedwhite: #f0efed;
+
+/* h1, h2, h3, h4 */
+@mixin homeh1 {
+  font-family: $headFont;
+  font-size: 10rem;
+}
+
+@mixin homeh2 {
+  font-family: $headFont;
+  font-size: 3.5rem;
+  font-weight: bold;
+  color: $plantedBlack;
+  letter-spacing: 0.08rem;
+}
+
+@mixin homeh4 {
+  font-family: $headFont;
+  font-size: 2rem;
+  letter-spacing: 0.063rem;
+  font-weight: 700;
+  color: $plantedBlack;
+}
+
+@mixin homeh3 {
+  font-family: $headFont;
+  font-size: 2.6rem;
+  letter-spacing: 0.063rem;
+  font-weight: 700;
+  color: $plantedBlack;
+}
+
+/*Body and Buttons */
+
+@mixin buttonText {
+  font-family: $headFont;
+  font-size: 1.25rem;
+  line-height: 2rem;
+  letter-spacing: 0.063rem;
+  font-weight: 700;
+  text-align: center;
+  color: $plantedwhite;
+}
+
+@mixin buttonStyle {
+  @include buttonText;
+  background-color: $plantedGreen;
+  padding: 15px 20px;
+  &:hover {
+    background: $plantedDarkGreen;
+  }
+}
+
+@mixin bodyText {
+  font-family: $bodyFont;
+  font-size: 1.25rem;
+  line-height: 2rem;
+  font-weight: 300;
+  color: $plantedBlack;
+}
+
+@mixin wrapper {
+  max-width: 1280px;
+  margin: 10%;
+}
+
+@mixin contentTitle {
+  font-family: $headFont;
+  font-weight: 700;
+  font-size: 5rem;
+  line-height: 5.75rem;
+  color: $plantedYellow;
+}

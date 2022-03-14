@@ -1,0 +1,129 @@
+/* h1, h2, h3, h4 */
+/*Body and Buttons */
+body {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body a {
+  text-decoration: none;
+}
+
+footer {
+  background-color: #2c2c2c;
+}
+
+footer h5 {
+  font-family: "Roboto", sans-serif;
+  color: #f0efed;
+  text-align: center;
+  padding: 10px;
+  margin: 0;
+}
+
+.blogbackground {
+  background-image: url(../images/blog-header-1.jpg);
+  background-repeat: no-repeat;
+  position: relative;
+  background-size: cover;
+}
+
+.blogbackground .topNav {
+  padding-top: 8px;
+  padding-bottom: 3px;
+  margin-left: 5%;
+  width: 50%;
+}
+
+.blogbackground .topNav ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.blogbackground .topNav ul li {
+  list-style: none;
+}
+
+.blogbackground .topNav ul li:first-child a {
+  font-size: 42px;
+  margin: 0;
+}
+
+.blogbackground .topNav ul li a {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  text-decoration: none;
+  color: #f0efed;
+  font-size: 20px;
+  letter-spacing: 1px;
+  font-family: "Josefin Sans", sans-serif;
+  font-weight: 400;
+}
+
+.blogbackground .topNav ul li a:hover {
+  color: #f8e71c;
+}
+
+.blogbackground .blogHeader {
+  margin-left: 10%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  height: 700px;
+}
+
+.blogbackground .blogHeader .sectionTitle {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-left: 10%;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+  margin-left: 0;
+}
+
+.blogbackground .blogHeader .sectionTitle h2 {
+  font-family: "Josefin Sans", sans-serif;
+  font-weight: 700;
+  font-size: 5rem;
+  line-height: 5.75rem;
+  color: #f8e71c;
+  text-align: left;
+}
+
+.blogbackground .blogPostImage {
+  position: absolute;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  bottom: -60px;
+  right: 0;
+  margin: 0;
+  padding: 0;
+  max-width: 700px;
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -webkit-box-shadow: -15px 15px #f8e71c;
+          box-shadow: -15px 15px #f8e71c;
+}
+
+.blogbackground .blogPostImage img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+/*# sourceMappingURL=blogStyle.css.map */

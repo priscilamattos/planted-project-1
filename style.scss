@@ -1,5 +1,293 @@
-@import "./design/typography.scss";
-@import "./design/partials.scss";
-@import "./design/variables.scss";
-@import "./design/nav.scss";
-@import "./design/baseStyle.scss";
+@import "./shared/shared_styles.scss";
+.homeBackground {
+  background-image: url("Project-Folders/home/images/home-image-1.jpg");
+  background-repeat: no-repeat;
+  position: relative;
+  background-size: cover;
+  .topNav {
+    margin-left: 0;
+    width: 100%;
+    padding-left: 5%;
+    padding-top: 8px;
+    padding-bottom: 3px;
+    position: fixed;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 10;
+    ul {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      width: 50%;
+
+      li {
+        &:first-child {
+          a {
+            font-size: 42px;
+            margin: 0;
+          }
+        }
+        list-style: none;
+        a {
+          display: flex;
+          text-decoration: none;
+          color: $plantedwhite;
+          font-size: 20px;
+          letter-spacing: 1px;
+          font-family: $headFont;
+          font-weight: 400;
+          &:hover {
+            color: $plantedYellow;
+          }
+        }
+      }
+    }
+  }
+  .plantedHeader {
+    margin: auto;
+    display: flex;
+    align-items: center;
+    width: 100%;
+    height: 700px;
+
+    .header {
+      width: 60%;
+      display: flex;
+      flex-direction: column;
+      margin: auto;
+      align-items: flex-start;
+
+      h1 {
+        @include homeh1;
+        color: $plantedwhite;
+        letter-spacing: 1.3px;
+        margin: 0;
+        z-index: 5;
+        display: inline;
+        text-align: left;
+        span {
+          color: $plantedYellow;
+        }
+      }
+    }
+  }
+
+  .headerImage {
+    position: absolute;
+    display: flex;
+    bottom: -60px;
+    right: 0;
+    margin: 0;
+    padding: 0;
+    max-width: 700px;
+    width: 100%;
+    object-fit: cover;
+    img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+  }
+}
+
+// About Planted Section
+.aboutPlanted {
+  display: flex;
+  align-items: center;
+  height: 700px;
+  background-color: $plantedwhite;
+  text-align: center;
+  .wrapper {
+    width: 90%;
+    margin: auto;
+  }
+
+  h2 {
+    @include homeh2;
+    text-align: center;
+  }
+  p {
+    @include bodyText;
+    padding: 0 10% 3%;
+  }
+  a {
+    @include buttonStyle;
+  }
+}
+
+// Blog Section
+article {
+  height: 400px;
+  position: relative;
+  .firstBlogContainer {
+    display: flex;
+    justify-content: space-between;
+    .wrapper {
+      width: 50%;
+    }
+    .boxImg {
+      top: -50px;
+      margin: -50px 0 0 0;
+      padding: 0;
+      width: 45%;
+      box-shadow: 15px 15px $plantedYellow;
+
+      img {
+        width: 100%;
+        height: 100%;
+      }
+    }
+    .blogPost {
+      width: 45%;
+      padding: 20px 10px 20px 0;
+      h3 {
+        @include homeh4;
+      }
+      p {
+        @include bodyText;
+        padding-right: 20%;
+        margin-bottom: 40px;
+      }
+      a {
+        @include buttonStyle;
+      }
+    }
+  }
+
+  .secondBlogContainer {
+    display: flex;
+    justify-content: space-between;
+    .wrapper {
+      width: 50%;
+    }
+    .boxImg {
+      margin: 0 0 -50px 0;
+      padding: 0;
+      bottom: -50px;
+      width: 45%;
+      box-shadow: -15px 15px $plantedYellow;
+
+      img {
+        width: 100%;
+        height: 100%;
+      }
+    }
+    .blogPost {
+      width: 45%;
+
+      padding: 20px 50px 20px 10px;
+      text-align: right;
+
+      h3 {
+        @include homeh4;
+      }
+      p {
+        @include bodyText;
+        padding-left: 20%;
+        margin-bottom: 40px;
+      }
+      a {
+        @include buttonStyle;
+      }
+    }
+  }
+}
+
+// Services Section
+.servicesContainer {
+  height: 800px;
+  background-color: $plantedwhite;
+  display: flex;
+
+  .wrapper {
+    width: 1280px;
+    margin: 10%;
+    display: flex;
+    align-items: center;
+  }
+  .contentBox {
+    display: flex;
+    flex-direction: column;
+    .services {
+      display: flex;
+      align-items: center;
+      i::before {
+        background-color: $plantedYellow;
+        padding: 15px;
+        border-radius: 50%;
+      }
+      h3 {
+        @include homeh4;
+        margin-left: 15px;
+        cursor: pointer;
+      }
+    }
+    .servicesText {
+      p {
+        @include bodyText;
+        width: 90%;
+        margin-top: 0;
+      }
+    }
+  }
+}
+
+// Banner
+.bannerHome {
+  margin: 0;
+  padding: 0;
+  img {
+    width: 100%;
+    height: auto;
+  }
+}
+
+// Planted's Founder
+.founderProfile {
+  background-color: $plantedwhite;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  .wrapper {
+    @include wrapper;
+    display: flex;
+  }
+  .founderImg {
+    margin: 0;
+    padding: 0;
+    img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+  }
+  .founderText {
+    display: flex;
+    flex-direction: column;
+    width: 60%;
+    padding-left: 5%;
+    h3 {
+      @include homeh3;
+      margin-bottom: 0;
+    }
+    p {
+      @include bodyText;
+      margin-bottom: 20px;
+    }
+    a {
+      @include buttonStyle;
+      width: 30%;
+    }
+  }
+}
+
+// Gallery
+.gallery {
+  .wrapper {
+    @include wrapper;
+    display: flex;
+    justify-content: space-between;
+  }
+
+  img {
+    width: 30%;
+  }
+}
