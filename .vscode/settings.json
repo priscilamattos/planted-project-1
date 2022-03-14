@@ -3,7 +3,6 @@
         {
         "format": "expanded",
         "extensionName": ".css",
-        "savePath": "/styles"
         }
     ],
     "liveSassCompile.settings.excludeList": [

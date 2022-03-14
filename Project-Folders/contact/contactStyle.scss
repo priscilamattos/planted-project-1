@@ -1,6 +1,6 @@
 @import "../../shared/shared_styles.scss";
 
-.blogbackground {
+.contactbackground {
   background-image: url("/Project-Folders/contact/images/contact-header-1.jpg");
   background-repeat: no-repeat;
   position: relative;
@@ -8,6 +8,8 @@
   height: 500px;
   .wrapperNav {
     margin: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 10;
   }
   .topNav {
     padding-top: 8px;
@@ -76,12 +78,23 @@ main {
       justify-content: space-between;
       color: $plantedGreen;
       margin-bottom: 1.5rem;
+      i {
+        &:hover {
+          cursor: pointer;
+          color: $plantedDarkGreen;
+        }
+      }
     }
   }
 
   .formContainer {
-    box-shadow: -15px 15px $plantedYellow;
-
+    .usermsg {
+      top: 240px;
+      right: 0;
+      width: 65%;
+      height: 45%;
+      box-shadow: -15px 15px $plantedYellow;
+    }
     form {
       width: 700px;
       margin-right: 0;
@@ -90,10 +103,6 @@ main {
       flex-direction: column;
       background-color: white;
       padding: 30px;
-      input:nth-child(2) {
-        padding-left: 5px;
-      }
-
       input[type="text"],
       input[type="email"] {
         border: none;
@@ -118,11 +127,12 @@ main {
             font-weight: 300;
             margin-top: 10px;
           }
-          button {
-            @include buttonStyle;
-            width: 100%;
-          }
         }
+      }
+      button {
+        @include buttonStyle;
+        width: 100%;
+        border: none;
       }
     }
   }

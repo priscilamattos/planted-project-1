@@ -23,7 +23,7 @@ footer h5 {
   margin: 0;
 }
 
-.blogbackground {
+.contactbackground {
   background-image: url("/Project-Folders/contact/images/contact-header-1.jpg");
   background-repeat: no-repeat;
   position: relative;
@@ -31,18 +31,20 @@ footer h5 {
   height: 500px;
 }
 
-.blogbackground .wrapperNav {
+.contactbackground .wrapperNav {
   margin: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: 10;
 }
 
-.blogbackground .topNav {
+.contactbackground .topNav {
   padding-top: 8px;
   padding-bottom: 3px;
   padding-left: 7%;
   width: 50%;
 }
 
-.blogbackground .topNav ul {
+.contactbackground .topNav ul {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -54,16 +56,16 @@ footer h5 {
           align-items: center;
 }
 
-.blogbackground .topNav ul li {
+.contactbackground .topNav ul li {
   list-style: none;
 }
 
-.blogbackground .topNav ul li:first-child a {
+.contactbackground .topNav ul li:first-child a {
   font-size: 42px;
   margin: 0;
 }
 
-.blogbackground .topNav ul li a {
+.contactbackground .topNav ul li a {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -75,11 +77,11 @@ footer h5 {
   font-weight: 400;
 }
 
-.blogbackground .topNav ul li a:hover {
+.contactbackground .topNav ul li a:hover {
   color: #f8e71c;
 }
 
-.blogbackground .contactHeader {
+.contactbackground .contactHeader {
   margin-left: 10%;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -90,7 +92,7 @@ footer h5 {
           align-items: flex-end;
 }
 
-.blogbackground .contactHeader .sectionTitle h2 {
+.contactbackground .contactHeader .sectionTitle h2 {
   font-family: "Josefin Sans", sans-serif;
   font-weight: 700;
   font-size: 5rem;
@@ -140,7 +142,16 @@ main {
   margin-bottom: 1.5rem;
 }
 
-.wrapper .formContainer {
+.wrapper .contactInfo .social_media-wrapper i:hover {
+  cursor: pointer;
+  color: #074115;
+}
+
+.wrapper .formContainer .usermsg {
+  top: 240px;
+  right: 0;
+  width: 65%;
+  height: 45%;
   -webkit-box-shadow: -15px 15px #f8e71c;
           box-shadow: -15px 15px #f8e71c;
 }
@@ -158,10 +169,6 @@ main {
           flex-direction: column;
   background-color: white;
   padding: 30px;
-}
-
-.wrapper .formContainer form input:nth-child(2) {
-  padding-left: 5px;
 }
 
 .wrapper .formContainer form input[type="text"],
@@ -200,7 +207,7 @@ main {
   margin-top: 10px;
 }
 
-.wrapper .formContainer form .message input[type="textarea"] button {
+.wrapper .formContainer form button {
   font-family: "Josefin Sans", sans-serif;
   font-size: 1.25rem;
   line-height: 2rem;
@@ -211,9 +218,9 @@ main {
   background-color: #0e902d;
   padding: 15px 20px;
   width: 100%;
+  border: none;
 }
 
-.wrapper .formContainer form .message input[type="textarea"] button:hover {
+.wrapper .formContainer form button:hover {
   background: #074115;
 }
-/*# sourceMappingURL=contactStyle.css.map */
