@@ -21,6 +21,7 @@ footer h5 {
   text-align: center;
   padding: 10px;
   margin: 0;
+  bottom: 0;
 }
 
 .homeBackground {
@@ -51,6 +52,7 @@ footer h5 {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  padding-left: 0;
   width: 50%;
 }
 

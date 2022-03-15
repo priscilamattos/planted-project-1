@@ -1,5 +1,17 @@
 @import "../../../shared/shared_styles.scss";
 
+body {
+  max-width: 1280px;
+}
+
+.wrapper {
+  margin: 0 10%;
+  height: auto;
+}
+main {
+  height: 100vh;
+  background-color: $plantedwhite;
+}
 .blogbackground {
   background-image: url(../images/blog-header-1.jpg);
   background-repeat: no-repeat;
@@ -8,18 +20,16 @@
   .topNav {
     padding-top: 8px;
     padding-bottom: 3px;
-    margin-left: 5%;
     width: 50%;
     ul {
       display: flex;
       justify-content: space-between;
       align-items: center;
-
+      padding-left: 0;
       li {
         &:first-child {
           a {
             font-size: 42px;
-            margin: 0;
           }
         }
         list-style: none;
@@ -42,30 +52,27 @@
   .blogHeader {
     margin-left: 10%;
     display: flex;
-    height: 700px;
-
-    .sectionTitle {
-      width: 100%;
-      display: flex;
-      margin-left: 10%;
-      align-items: flex-end;
-      margin-left: 0;
-      h2 {
-        @include contentTitle;
-        text-align: left;
-      }
+    height: 240px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    margin-left: 10%;
+    margin-left: 0;
+    h1 {
+      @include blogh1;
+      text-align: left;
+      line-height: 0;
     }
   }
 
   .blogPostImage {
     position: absolute;
     display: flex;
-    bottom: -60px;
+    top: 120px;
     right: 0;
     margin: 0;
     padding: 0;
-    max-width: 700px;
-    width: 100%;
+    max-width: 680px;
     object-fit: cover;
     box-shadow: -15px 15px $plantedYellow;
 
@@ -74,5 +81,158 @@
       height: 100%;
       object-fit: cover;
     }
+  }
+}
+/* Blog Post */
+.blogwrapper {
+  display: flex;
+  padding-top: 20%;
+  border: 1px solid red;
+  margin: 0 10%;
+  justify-content: space-between;
+  .blogPost {
+    border-left: 5px solid $plantedYellow;
+    border-bottom: 5px solid $plantedYellow;
+
+    width: 50%;
+    padding-left: 5%;
+    h2 {
+      @include blogh2;
+    }
+    p {
+      @include bodyText;
+    }
+    .blogPostDate {
+      /* review */
+      font-weight: lighter;
+    }
+  }
+  aside {
+    width: 40%;
+    border: 1px solid red;
+    height: 100%;
+    padding-top: 260px;
+    background-color: rgb(255, 255, 255);
+
+    .aboutImageContainer {
+      position: absolute;
+      display: flex;
+      top: 400px;
+      left: 0;
+      margin: 0;
+      padding: 0;
+      max-width: 600px;
+      object-fit: cover;
+      img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+      }
+    }
+    .aboutBlog {
+      padding: 5%;
+      h3 {
+        @include blogh3;
+      }
+      p {
+        @include bodyText;
+      }
+    }
+    .listPost {
+      padding: 5%;
+      h3 {
+        @include blogh3;
+      }
+      ul li {
+        @include bodyText;
+      }
+    }
+  }
+}
+/*Blog Comments*/
+.commentsContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  padding-top: 5%;
+  border: 1px solid red;
+  margin: 0 10%;
+  .flexcomments {
+    width: 50%;
+    h3 {
+      @include blogh3;
+    }
+    h4 {
+      @include blogh4;
+      margin-top: 0;
+    }
+    p {
+      @include bodyText;
+    }
+  }
+  .blogComments {
+    display: flex;
+    margin-bottom: 10%;
+    figure {
+      margin-left: 0;
+      margin-top: 0;
+    }
+  }
+
+  /* Post Comment */
+  .formContainer {
+    form {
+      width: 100%;
+      flex-direction: column;
+      justify-content: space-between;
+      .identification {
+        display: flex;
+        justify-content: space-between;
+      }
+      input[type="text"],
+      input[type="email"] {
+        border: none;
+        height: 40px;
+        width: 48%;
+        border-bottom: 2px solid $plantedGreen;
+        background-color: $plantedwhite;
+        placeholder {
+          @include bodyText;
+          font-weight: 300;
+        }
+      }
+      input:focus {
+        outline: none;
+        box-shadow: 2px solid $plantedDarkGreen;
+        transition: 180ms box-shadow ease-in-out;
+      }
+
+      .message {
+        input[type="textarea"] {
+          border: 2px solid $plantedGreen;
+          background-color: $plantedwhite;
+
+          width: calc(100% - 4px);
+          height: 150px;
+          margin-top: 20px;
+          margin-bottom: 20px;
+          transition: 180ms box-shadow ease-in-out;
+          placeholder {
+            @include bodyText;
+            font-weight: 300;
+            margin-top: 10px;
+          }
+        }
+      }
+      button {
+        @include buttonStyle;
+        width: 100%;
+        border: none;
+      }
+    }
+  }
+
+  .footer {
+    bottom: 0;
   }
 }

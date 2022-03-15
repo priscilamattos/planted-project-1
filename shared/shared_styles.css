@@ -1,5 +1,6 @@
-/* h1, h2, h3, h4 */
+/* Home h1, h2, h3, h4 */
 /*Body and Buttons */
+/* Blog and Contact h1, h2, h3 */
 body {
   margin: 0;
   padding: 0;
@@ -21,4 +22,5 @@ footer h5 {
   text-align: center;
   padding: 10px;
   margin: 0;
+  bottom: 0;
 }

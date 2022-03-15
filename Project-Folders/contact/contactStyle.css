@@ -1,5 +1,6 @@
-/* h1, h2, h3, h4 */
+/* Home h1, h2, h3, h4 */
 /*Body and Buttons */
+/* Blog and Contact h1, h2, h3 */
 body {
   margin: 0;
   padding: 0;
@@ -21,6 +22,7 @@ footer h5 {
   text-align: center;
   padding: 10px;
   margin: 0;
+  bottom: 0;
 }
 
 .contactbackground {
@@ -54,6 +56,8 @@ footer h5 {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  padding-left: 0;
+  width: 50%;
 }
 
 .contactbackground .topNav ul li {
@@ -106,7 +110,6 @@ main {
 }
 
 .wrapper {
-  max-width: 1280px;
   padding: 10%;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -130,6 +133,16 @@ main {
   line-height: 0.2rem;
 }
 
+.wrapper .contactInfo .emailContact {
+  font-family: "Roboto", sans-serif;
+  font-size: 1.25rem;
+  line-height: 2rem;
+  font-weight: 300;
+  color: #2c2c2c;
+  font-family: "Josefin Sans", sans-serif;
+  font-weight: 700;
+}
+
 .wrapper .contactInfo .social_media-wrapper {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -149,9 +162,9 @@ main {
 
 .wrapper .formContainer .usermsg {
   top: 240px;
-  right: 0;
-  width: 65%;
-  height: 45%;
+  right: 5%;
+  width: 60%;
+  height: 480px;
   -webkit-box-shadow: -15px 15px #f8e71c;
           box-shadow: -15px 15px #f8e71c;
 }
@@ -167,15 +180,27 @@ main {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
   background-color: white;
   padding: 30px;
+}
+
+.wrapper .formContainer form .identification {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
 }
 
 .wrapper .formContainer form input[type="text"],
 .wrapper .formContainer form input[type="email"] {
   border: none;
   height: 40px;
-  width: 45%;
+  width: 48%;
   border-bottom: 2px solid #0e902d;
 }
 
@@ -189,12 +214,26 @@ main {
   font-weight: 300;
 }
 
+.wrapper .formContainer form input:focus {
+  outline: none;
+  -webkit-box-shadow: 2px solid #074115;
+          box-shadow: 2px solid #074115;
+  -webkit-transition: 180ms -webkit-box-shadow ease-in-out;
+  transition: 180ms -webkit-box-shadow ease-in-out;
+  transition: 180ms box-shadow ease-in-out;
+  transition: 180ms box-shadow ease-in-out, 180ms -webkit-box-shadow ease-in-out;
+}
+
 .wrapper .formContainer form .message input[type="textarea"] {
   border: 2px solid #0e902d;
-  width: 100%;
+  width: calc(100% - 4px);
   height: 250px;
-  margin-top: 30px;
-  margin-bottom: 30px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  -webkit-transition: 180ms -webkit-box-shadow ease-in-out;
+  transition: 180ms -webkit-box-shadow ease-in-out;
+  transition: 180ms box-shadow ease-in-out;
+  transition: 180ms box-shadow ease-in-out, 180ms -webkit-box-shadow ease-in-out;
 }
 
 .wrapper .formContainer form .message input[type="textarea"] placeholder {

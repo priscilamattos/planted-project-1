@@ -20,7 +20,8 @@
       display: flex;
       justify-content: space-between;
       align-items: center;
-
+      padding-left: 0;
+      width: 50%;
       li {
         &:first-child {
           a {
@@ -63,7 +64,6 @@ main {
   background-color: $plantedwhite;
 }
 .wrapper {
-  max-width: 1280px;
   padding: 10%;
   display: flex;
   .contactInfo {
@@ -72,6 +72,11 @@ main {
     display: flex;
     flex-direction: column;
     line-height: 0.2rem;
+    .emailContact {
+      @include bodyText;
+      font-family: $headFont;
+      font-weight: 700;
+    }
     .social_media-wrapper {
       display: flex;
       width: 50%;
@@ -90,9 +95,9 @@ main {
   .formContainer {
     .usermsg {
       top: 240px;
-      right: 0;
-      width: 65%;
-      height: 45%;
+      right: 5%;
+      width: 60%;
+      height: 480px;
       box-shadow: -15px 15px $plantedYellow;
     }
     form {
@@ -101,27 +106,38 @@ main {
       position: absolute;
       display: flex;
       flex-direction: column;
+      justify-content: space-between;
       background-color: white;
       padding: 30px;
+      .identification {
+        display: flex;
+        justify-content: space-between;
+      }
       input[type="text"],
       input[type="email"] {
         border: none;
         height: 40px;
-        width: 45%;
+        width: 48%;
         border-bottom: 2px solid $plantedGreen;
-
         placeholder {
           @include bodyText;
           font-weight: 300;
         }
       }
+      input:focus {
+        outline: none;
+        box-shadow: 2px solid $plantedDarkGreen;
+        transition: 180ms box-shadow ease-in-out;
+      }
+
       .message {
         input[type="textarea"] {
           border: 2px solid $plantedGreen;
-          width: 100%;
+          width: calc(100% - 4px);
           height: 250px;
-          margin-top: 30px;
-          margin-bottom: 30px;
+          margin-top: 20px;
+          margin-bottom: 20px;
+          transition: 180ms box-shadow ease-in-out;
           placeholder {
             @include bodyText;
             font-weight: 300;

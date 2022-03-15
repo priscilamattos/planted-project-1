@@ -8,7 +8,7 @@ $plantedGreen: #0e902d;
 $plantedYellow: #f8e71c;
 $plantedwhite: #f0efed;
 
-/* h1, h2, h3, h4 */
+/* Home h1, h2, h3, h4 */
 @mixin homeh1 {
   font-family: $headFont;
   font-size: 10rem;
@@ -67,15 +67,43 @@ $plantedwhite: #f0efed;
   color: $plantedBlack;
 }
 
-@mixin wrapper {
-  max-width: 1280px;
-  margin: 10%;
-}
-
 @mixin contentTitle {
   font-family: $headFont;
   font-weight: 700;
   font-size: 5rem;
   line-height: 5.75rem;
   color: $plantedYellow;
+}
+
+/* Blog and Contact h1, h2, h3 */
+
+@mixin blogh1 {
+  font-family: $headFont;
+  font-size: 5rem;
+  line-height: 5.75rem;
+  color: $plantedYellow;
+}
+
+@mixin blogh2 {
+  font-family: $headFont;
+  font-size: 2.6rem;
+  font-weight: bold;
+  color: $plantedBlack;
+  letter-spacing: 0.081rem;
+}
+
+@mixin blogh4 {
+  font-family: $headFont;
+  font-size: 1.25rem;
+  line-height: 2rem;
+  font-weight: 700;
+  color: $plantedBlack;
+}
+
+@mixin blogh3 {
+  font-family: $headFont;
+  font-size: 2rem;
+  letter-spacing: 0.063rem;
+  font-weight: 700;
+  color: $plantedBlack;
 }

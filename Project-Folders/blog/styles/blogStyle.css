@@ -1,5 +1,6 @@
-/* h1, h2, h3, h4 */
+/* Home h1, h2, h3, h4 */
 /*Body and Buttons */
+/* Blog and Contact h1, h2, h3 */
 body {
   margin: 0;
   padding: 0;
@@ -21,6 +22,21 @@ footer h5 {
   text-align: center;
   padding: 10px;
   margin: 0;
+  bottom: 0;
+}
+
+body {
+  max-width: 1280px;
+}
+
+.wrapper {
+  margin: 0 10%;
+  height: auto;
+}
+
+main {
+  height: 100vh;
+  background-color: #f0efed;
 }
 
 .blogbackground {
@@ -33,7 +49,6 @@ footer h5 {
 .blogbackground .topNav {
   padding-top: 8px;
   padding-bottom: 3px;
-  margin-left: 5%;
   width: 50%;
 }
 
@@ -47,6 +62,7 @@ footer h5 {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  padding-left: 0;
 }
 
 .blogbackground .topNav ul li {
@@ -55,7 +71,6 @@ footer h5 {
 
 .blogbackground .topNav ul li:first-child a {
   font-size: 42px;
-  margin: 0;
 }
 
 .blogbackground .topNav ul li a {
@@ -79,28 +94,23 @@ footer h5 {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  height: 700px;
-}
-
-.blogbackground .blogHeader .sectionTitle {
+  height: 240px;
   width: 100%;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   margin-left: 10%;
-  -webkit-box-align: end;
-      -ms-flex-align: end;
-          align-items: flex-end;
   margin-left: 0;
 }
 
-.blogbackground .blogHeader .sectionTitle h2 {
+.blogbackground .blogHeader h1 {
   font-family: "Josefin Sans", sans-serif;
-  font-weight: 700;
   font-size: 5rem;
   line-height: 5.75rem;
   color: #f8e71c;
   text-align: left;
+  line-height: 0;
 }
 
 .blogbackground .blogPostImage {
@@ -108,12 +118,11 @@ footer h5 {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  bottom: -60px;
+  top: 120px;
   right: 0;
   margin: 0;
   padding: 0;
-  max-width: 700px;
-  width: 100%;
+  max-width: 680px;
   -o-object-fit: cover;
      object-fit: cover;
   -webkit-box-shadow: -15px 15px #f8e71c;
@@ -125,4 +134,267 @@ footer h5 {
   height: 100%;
   -o-object-fit: cover;
      object-fit: cover;
+}
+
+/* Blog Post */
+.blogwrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding-top: 20%;
+  border: 1px solid red;
+  margin: 0 10%;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.blogwrapper .blogPost {
+  border-left: 5px solid #f8e71c;
+  border-bottom: 5px solid #f8e71c;
+  width: 50%;
+  padding-left: 5%;
+}
+
+.blogwrapper .blogPost h2 {
+  font-family: "Josefin Sans", sans-serif;
+  font-size: 2.6rem;
+  font-weight: bold;
+  color: #2c2c2c;
+  letter-spacing: 0.081rem;
+}
+
+.blogwrapper .blogPost p {
+  font-family: "Roboto", sans-serif;
+  font-size: 1.25rem;
+  line-height: 2rem;
+  font-weight: 300;
+  color: #2c2c2c;
+}
+
+.blogwrapper .blogPost .blogPostDate {
+  /* review */
+  font-weight: lighter;
+}
+
+.blogwrapper aside {
+  width: 40%;
+  border: 1px solid red;
+  height: 100%;
+  padding-top: 260px;
+  background-color: white;
+}
+
+.blogwrapper aside .aboutImageContainer {
+  position: absolute;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  top: 400px;
+  left: 0;
+  margin: 0;
+  padding: 0;
+  max-width: 600px;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.blogwrapper aside .aboutImageContainer img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.blogwrapper aside .aboutBlog {
+  padding: 5%;
+}
+
+.blogwrapper aside .aboutBlog h3 {
+  font-family: "Josefin Sans", sans-serif;
+  font-size: 2rem;
+  letter-spacing: 0.063rem;
+  font-weight: 700;
+  color: #2c2c2c;
+}
+
+.blogwrapper aside .aboutBlog p {
+  font-family: "Roboto", sans-serif;
+  font-size: 1.25rem;
+  line-height: 2rem;
+  font-weight: 300;
+  color: #2c2c2c;
+}
+
+.blogwrapper aside .listPost {
+  padding: 5%;
+}
+
+.blogwrapper aside .listPost h3 {
+  font-family: "Josefin Sans", sans-serif;
+  font-size: 2rem;
+  letter-spacing: 0.063rem;
+  font-weight: 700;
+  color: #2c2c2c;
+}
+
+.blogwrapper aside .listPost ul li {
+  font-family: "Roboto", sans-serif;
+  font-size: 1.25rem;
+  line-height: 2rem;
+  font-weight: 300;
+  color: #2c2c2c;
+}
+
+/*Blog Comments*/
+.commentsContainer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+  padding-top: 5%;
+  border: 1px solid red;
+  margin: 0 10%;
+  /* Post Comment */
+}
+
+.commentsContainer .flexcomments {
+  width: 50%;
+}
+
+.commentsContainer .flexcomments h3 {
+  font-family: "Josefin Sans", sans-serif;
+  font-size: 2rem;
+  letter-spacing: 0.063rem;
+  font-weight: 700;
+  color: #2c2c2c;
+}
+
+.commentsContainer .flexcomments h4 {
+  font-family: "Josefin Sans", sans-serif;
+  font-size: 1.25rem;
+  line-height: 2rem;
+  font-weight: 700;
+  color: #2c2c2c;
+  margin-top: 0;
+}
+
+.commentsContainer .flexcomments p {
+  font-family: "Roboto", sans-serif;
+  font-size: 1.25rem;
+  line-height: 2rem;
+  font-weight: 300;
+  color: #2c2c2c;
+}
+
+.commentsContainer .blogComments {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-bottom: 10%;
+}
+
+.commentsContainer .blogComments figure {
+  margin-left: 0;
+  margin-top: 0;
+}
+
+.commentsContainer .formContainer form {
+  width: 100%;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.commentsContainer .formContainer form .identification {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.commentsContainer .formContainer form input[type="text"],
+.commentsContainer .formContainer form input[type="email"] {
+  border: none;
+  height: 40px;
+  width: 48%;
+  border-bottom: 2px solid #0e902d;
+  background-color: #f0efed;
+}
+
+.commentsContainer .formContainer form input[type="text"] placeholder,
+.commentsContainer .formContainer form input[type="email"] placeholder {
+  font-family: "Roboto", sans-serif;
+  font-size: 1.25rem;
+  line-height: 2rem;
+  font-weight: 300;
+  color: #2c2c2c;
+  font-weight: 300;
+}
+
+.commentsContainer .formContainer form input:focus {
+  outline: none;
+  -webkit-box-shadow: 2px solid #074115;
+          box-shadow: 2px solid #074115;
+  -webkit-transition: 180ms -webkit-box-shadow ease-in-out;
+  transition: 180ms -webkit-box-shadow ease-in-out;
+  transition: 180ms box-shadow ease-in-out;
+  transition: 180ms box-shadow ease-in-out, 180ms -webkit-box-shadow ease-in-out;
+}
+
+.commentsContainer .formContainer form .message input[type="textarea"] {
+  border: 2px solid #0e902d;
+  background-color: #f0efed;
+  width: calc(100% - 4px);
+  height: 150px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  -webkit-transition: 180ms -webkit-box-shadow ease-in-out;
+  transition: 180ms -webkit-box-shadow ease-in-out;
+  transition: 180ms box-shadow ease-in-out;
+  transition: 180ms box-shadow ease-in-out, 180ms -webkit-box-shadow ease-in-out;
+}
+
+.commentsContainer .formContainer form .message input[type="textarea"] placeholder {
+  font-family: "Roboto", sans-serif;
+  font-size: 1.25rem;
+  line-height: 2rem;
+  font-weight: 300;
+  color: #2c2c2c;
+  font-weight: 300;
+  margin-top: 10px;
+}
+
+.commentsContainer .formContainer form button {
+  font-family: "Josefin Sans", sans-serif;
+  font-size: 1.25rem;
+  line-height: 2rem;
+  letter-spacing: 0.063rem;
+  font-weight: 700;
+  text-align: center;
+  color: #f0efed;
+  background-color: #0e902d;
+  padding: 15px 20px;
+  width: 100%;
+  border: none;
+}
+
+.commentsContainer .formContainer form button:hover {
+  background: #074115;
+}
+
+.commentsContainer .footer {
+  bottom: 0;
 }
