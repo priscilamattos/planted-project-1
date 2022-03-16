@@ -1,48 +1,57 @@
 @import "../../../shared/shared_styles.scss";
 
 body {
-  max-width: 1280px;
+  margin: 0 auto;
 }
 
-.wrapper {
-  margin: 0 10%;
-  height: auto;
+.container {
+  margin: 0 auto;
+  max-width: 1280px;
+  position: relative;
 }
 main {
-  height: 100vh;
   background-color: $plantedwhite;
 }
+
 .blogbackground {
   background-image: url(../images/blog-header-1.jpg);
   background-repeat: no-repeat;
-  position: relative;
   background-size: cover;
-  .topNav {
-    padding-top: 8px;
-    padding-bottom: 3px;
-    width: 50%;
-    ul {
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-      padding-left: 0;
-      li {
-        &:first-child {
-          a {
-            font-size: 42px;
+  height: 500px;
+  .wrapperNav {
+    margin: 0;
+    height: 80px;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 10;
+    .topNav {
+      padding-top: 8px;
+      padding-bottom: 3px;
+      width: 50%;
+      padding-left: 10%;
+
+      ul {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding-left: 0;
+        li {
+          &:first-child {
+            a {
+              font-size: 42px;
+            }
           }
-        }
-        list-style: none;
-        a {
-          display: flex;
-          text-decoration: none;
-          color: $plantedwhite;
-          font-size: 20px;
-          letter-spacing: 1px;
-          font-family: $headFont;
-          font-weight: 400;
-          &:hover {
-            color: $plantedYellow;
+          list-style: none;
+          a {
+            display: flex;
+            text-decoration: none;
+            color: $plantedwhite;
+            font-size: 20px;
+            letter-spacing: 1px;
+            font-family: $headFont;
+            font-weight: 400;
+            &:hover {
+              color: $plantedYellow;
+            }
           }
         }
       }
@@ -51,24 +60,27 @@ main {
 
   .blogHeader {
     margin-left: 10%;
-    display: flex;
-    height: 240px;
+    height: 420px;
     width: 100%;
     display: flex;
-    align-items: center;
-    margin-left: 10%;
-    margin-left: 0;
+    align-items: flex-end;
     h1 {
       @include blogh1;
       text-align: left;
       line-height: 0;
     }
   }
-
+}
+/* Blog Post */
+.blogwrapper {
+  display: flex;
+  padding-top: 10%;
+  margin: 0 10%;
+  justify-content: space-between;
   .blogPostImage {
     position: absolute;
     display: flex;
-    top: 120px;
+    top: -200px;
     right: 0;
     margin: 0;
     padding: 0;
@@ -82,42 +94,38 @@ main {
       object-fit: cover;
     }
   }
-}
-/* Blog Post */
-.blogwrapper {
-  display: flex;
-  padding-top: 20%;
-  border: 1px solid red;
-  margin: 0 10%;
-  justify-content: space-between;
   .blogPost {
     border-left: 5px solid $plantedYellow;
     border-bottom: 5px solid $plantedYellow;
-
     width: 50%;
     padding-left: 5%;
+    padding-top: inherit;
     h2 {
       @include blogh2;
+      margin-bottom: 0;
+      padding-top: 25px;
     }
     p {
       @include bodyText;
     }
     .blogPostDate {
-      /* review */
-      font-weight: lighter;
+      font-style: italic;
+      .author {
+        font-weight: 700;
+        font-style: normal;
+      }
     }
   }
   aside {
-    width: 40%;
-    border: 1px solid red;
+    width: 30%;
     height: 100%;
-    padding-top: 260px;
+    padding-top: 400px;
     background-color: rgb(255, 255, 255);
 
     .aboutImageContainer {
       position: absolute;
       display: flex;
-      top: 400px;
+      top: 100px;
       left: 0;
       margin: 0;
       padding: 0;
@@ -155,7 +163,6 @@ main {
   flex-direction: column;
   align-items: flex-end;
   padding-top: 5%;
-  border: 1px solid red;
   margin: 0 10%;
   .flexcomments {
     width: 50%;
@@ -185,6 +192,8 @@ main {
       width: 100%;
       flex-direction: column;
       justify-content: space-between;
+      margin-top: 10%;
+      margin-bottom: 10%;
       .identification {
         display: flex;
         justify-content: space-between;
@@ -200,18 +209,15 @@ main {
           @include bodyText;
           font-weight: 300;
         }
+        &:focus,
+        &:active {
+          outline: 2px solid $plantedDarkGreen;
+        }
       }
-      input:focus {
-        outline: none;
-        box-shadow: 2px solid $plantedDarkGreen;
-        transition: 180ms box-shadow ease-in-out;
-      }
-
       .message {
-        input[type="textarea"] {
+        textarea {
           border: 2px solid $plantedGreen;
           background-color: $plantedwhite;
-
           width: calc(100% - 4px);
           height: 150px;
           margin-top: 20px;
@@ -220,7 +226,11 @@ main {
           placeholder {
             @include bodyText;
             font-weight: 300;
-            margin-top: 10px;
+            padding: 10px;
+          }
+          &:focus,
+          &:active {
+            outline: 2px solid $plantedDarkGreen;
           }
         }
       }

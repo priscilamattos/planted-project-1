@@ -20,123 +20,137 @@
   <body>
     <header>
       <div class="blogbackground">
-        <div class="wrapper">
+        <div class="wrapperNav">
           <nav class="topNav">
             <ul>
               <li><a href="#">Planted</a></li>
-              <li><a href="#">HOME</a></li>
+              <li><a href="/index.html">HOME</a></li>
               <li><a href="#">ABOUT</a></li>
               <li><a href="#">BLOG</a></li>
-              <li><a href="#">CONTACT</a></li>
+              <li>
+                <a href="/Project-Folders/contact/contact.html">CONTACT</a>
+              </li>
             </ul>
           </nav>
         </div>
         <div class="blogHeader">
-          <div class="wrapper">
-            <h1>Blog</h1>
-          </div>
+          <h1>Blog</h1>
         </div>
-        <figure class="blogPostImage">
-          <img src="./images/post-image.jpg" alt="Blog Post Image" />
-        </figure>
       </div>
     </header>
     <main>
-      <div class="blogwrapper">
-        <aside>
-          <figure class="aboutImageContainer">
-            <img src="./images/side-bar-image.jpg" alt="Side bar Image" />
-          </figure>
-          <section class="aboutBlog">
-            <h3>About Planted</h3>
+      <div class="container">
+        <div class="blogwrapper">
+          <aside>
+            <figure class="aboutImageContainer">
+              <img src="./images/side-bar-image.jpg" alt="Side bar Image" />
+            </figure>
+            <section class="aboutBlog">
+              <h3>About Planted</h3>
+              <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                <span class="linktext">Find out more.</span>
+              </p>
+            </section>
+            <section class="listPost">
+              <h3>Recent Posts</h3>
+              <ul>
+                <li>Pellentesque ac tempor risus</li>
+                <li>Lorem ipsum dolor sit amet</li>
+                <li>Proin scelerisque consectetur.</li>
+                <li>Morbi consectetur ligula</li>
+              </ul>
+            </section>
+          </aside>
+          <section class="blogPost">
+            <figure class="blogPostImage">
+              <img src="./images/post-image.jpg" alt="Blog Post Image" />
+            </figure>
+            <h2>Our mission at Planted</h2>
+            <p class="blogPostDate">
+              Monday January 21th, 2022 by <span class="author"> Yousra</span>
+            </p>
             <p>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-              <span class="linktext">Find out more.</span>
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce
+              fringilla non tortor vel imperdiet. Pellentesque ac tempor risus,
+              eu interdum tortor. Mauris facilisis consectetur tristique.
+            </p>
+            <p>
+              Phasellus pellentesque felis mollis, imperdiet urna in, venenatis
+              quam. Suspendisse egestas nec ipsum in blandit. Duis sagittis
+              velit in metus ultrices, quis pellentesque quam efficitur. Donec
+              eget sapien at tortor pellentesque interdum. Etiam ac placerat
+              nunc. Vivamus sollicitudin odio vulputate nulla consequat
+              ultrices. In vehicula felis ac magna luctus efficitur. Etiam
+              tristique nulla nec risus fringilla, vitae auctor lorem elementum.
+              Proin iaculis scelerisque consectetur. Proin nec mauris dolor.
+            </p>
+            <p>
+              Duis sed egestas purus. Vivamus rutrum tellus id nulla convallis,
+              id laoreet quam semper. Fusce nulla nisi, hendrerit sed finibus
+              et, tristique in nibh. Ut placerat dignissim purus non tempor. Nam
+              mattis a tellus in ullamcorper. Quisque eget enim non leo
+              venenatis tempus.
             </p>
           </section>
-          <section class="listPost">
-            <h3>Recent Posts</h3>
-            <ul>
-              <li>Pellentesque ac tempor risus</li>
-              <li>Lorem ipsum dolor sit amet</li>
-              <li>Proin scelerisque consectetur.</li>
-              <li>Morbi consectetur ligula</li>
-            </ul>
-          </section>
-        </aside>
-        <section class="blogPost">
-          <h2>Our mission at Planted</h2>
-          <p class="blogPostDate">Monday January 21th, 2022 by Yousra</p>
-          <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce
-            fringilla non tortor vel imperdiet. Pellentesque ac tempor risus, eu
-            interdum tortor. Mauris facilisis consectetur tristique.
-          </p>
-          <p>
-            Phasellus pellentesque felis mollis, imperdiet urna in, venenatis
-            quam. Suspendisse egestas nec ipsum in blandit. Duis sagittis velit
-            in metus ultrices, quis pellentesque quam efficitur. Donec eget
-            sapien at tortor pellentesque interdum. Etiam ac placerat nunc.
-            Vivamus sollicitudin odio vulputate nulla consequat ultrices. In
-            vehicula felis ac magna luctus efficitur. Etiam tristique nulla nec
-            risus fringilla, vitae auctor lorem elementum. Proin iaculis
-            scelerisque consectetur. Proin nec mauris dolor.
-          </p>
-          <p>
-            Duis sed egestas purus. Vivamus rutrum tellus id nulla convallis, id
-            laoreet quam semper. Fusce nulla nisi, hendrerit sed finibus et,
-            tristique in nibh. Ut placerat dignissim purus non tempor. Nam
-            mattis a tellus in ullamcorper. Quisque eget enim non leo venenatis
-            tempus.
-          </p>
+        </div>
+        <section class="commentsContainer">
+          <div class="flexcomments">
+            <h3>Comments</h3>
+            <div class="blogComments">
+              <figure>
+                <img
+                  src="./images/profile-image.jpg"
+                  alt="User Profile Image"
+                />
+              </figure>
+              <div class="comment">
+                <h4>Tuesday October 9th, 2018 by Jeremy</h4>
+                <p>
+                  Fusce nulla nisi, hendrerit sed finibus et, tristique in nibh.
+                  Ut placerat dignissim purus non tempor. Nam mattis a tellus in
+                  ullamcorper. Quisque eget enim non leo venenatis tempus.
+                </p>
+              </div>
+            </div>
+            <div class="blogComments">
+              <figure>
+                <img
+                  src="./images/profile-image-2.jpg"
+                  alt="User Profile Image"
+                />
+              </figure>
+              <div class="comment">
+                <h4>Wednesday October 10th, 2018 by Julia</h4>
+                <p>
+                  Donec luctus tincidunt magna et iaculis. In viverra nisi
+                  dolor, non eleifend metus blandit sit amet. Nunc at commodo
+                  sem. Morbi bibendum cursus magna, at porta justo pretium ac.
+                </p>
+              </div>
+            </div>
+            <div class="formContainer">
+              <form class="usermsg">
+                <div class="identification">
+                  <input type="text" placeholder="Name" id="name" />
+                  <input type="email" placeholder="Email address" id="email" />
+                </div>
+                <div class="message">
+                  <textarea
+                    id="sendComment"
+                    placeholder="Comment"
+                    name="sendComment"
+                    rows="4"
+                    cols="50"
+                  >
+                  </textarea>
+                </div>
+                <button>Post Comment</button>
+              </form>
+            </div>
+          </div>
         </section>
       </div>
-      <section class="commentsContainer">
-        <div class="flexcomments">
-          <h3>Comments</h3>
-          <div class="blogComments">
-            <figure>
-              <img src="./images/profile-image.jpg" alt="User Profile Image" />
-            </figure>
-            <div class="comment">
-              <h4>Tuesday October 9th, 2018 by Jeremy</h4>
-              <p>
-                Fusce nulla nisi, hendrerit sed finibus et, tristique in nibh.
-                Ut placerat dignissim purus non tempor. Nam mattis a tellus in
-                ullamcorper. Quisque eget enim non leo venenatis tempus.
-              </p>
-            </div>
-          </div>
-          <div class="blogComments">
-            <figure>
-              <img
-                src="./images/profile-image-2.jpg"
-                alt="User Profile Image"
-              />
-            </figure>
-            <div class="comment">
-              <h4>Wednesday October 10th, 2018 by Julia</h4>
-              <p>
-                Donec luctus tincidunt magna et iaculis. In viverra nisi dolor,
-                non eleifend metus blandit sit amet. Nunc at commodo sem. Morbi
-                bibendum cursus magna, at porta justo pretium ac.
-              </p>
-            </div>
-          </div>
-          <div class="formContainer">
-            <form class="usermsg">
-              <div class="identification">
-                <input type="text" placeholder="Name" id="name" />
-                <input type="email" placeholder="Email address" id="email" />
-              </div>
-              <div class="message">
-                <input type="textarea" placeholder="Comment" id="comment" />
-              </div>
-              <button>Post Comment</button>
-            </form>
-          </div>
-        </div>
-      </section>
     </main>
     <footer>
       <h5>2022 - Juno College - Priscila Mattos - Cohort 40</h5>

@@ -26,33 +26,41 @@ footer h5 {
 }
 
 body {
-  max-width: 1280px;
+  margin: 0 auto;
 }
 
-.wrapper {
-  margin: 0 10%;
-  height: auto;
+.container {
+  margin: 0 auto;
+  max-width: 1280px;
+  position: relative;
 }
 
 main {
-  height: 100vh;
   background-color: #f0efed;
 }
 
 .blogbackground {
   background-image: url(../images/blog-header-1.jpg);
   background-repeat: no-repeat;
-  position: relative;
   background-size: cover;
+  height: 500px;
 }
 
-.blogbackground .topNav {
+.blogbackground .wrapperNav {
+  margin: 0;
+  height: 80px;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: 10;
+}
+
+.blogbackground .wrapperNav .topNav {
   padding-top: 8px;
   padding-bottom: 3px;
   width: 50%;
+  padding-left: 10%;
 }
 
-.blogbackground .topNav ul {
+.blogbackground .wrapperNav .topNav ul {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -65,15 +73,15 @@ main {
   padding-left: 0;
 }
 
-.blogbackground .topNav ul li {
+.blogbackground .wrapperNav .topNav ul li {
   list-style: none;
 }
 
-.blogbackground .topNav ul li:first-child a {
+.blogbackground .wrapperNav .topNav ul li:first-child a {
   font-size: 42px;
 }
 
-.blogbackground .topNav ul li a {
+.blogbackground .wrapperNav .topNav ul li a {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -85,23 +93,20 @@ main {
   font-weight: 400;
 }
 
-.blogbackground .topNav ul li a:hover {
+.blogbackground .wrapperNav .topNav ul li a:hover {
   color: #f8e71c;
 }
 
 .blogbackground .blogHeader {
   margin-left: 10%;
+  height: 420px;
+  width: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  height: 240px;
-  width: 100%;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  margin-left: 10%;
-  margin-left: 0;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
 }
 
 .blogbackground .blogHeader h1 {
@@ -113,12 +118,24 @@ main {
   line-height: 0;
 }
 
-.blogbackground .blogPostImage {
+/* Blog Post */
+.blogwrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding-top: 10%;
+  margin: 0 10%;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.blogwrapper .blogPostImage {
   position: absolute;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  top: 120px;
+  top: -200px;
   right: 0;
   margin: 0;
   padding: 0;
@@ -129,24 +146,11 @@ main {
           box-shadow: -15px 15px #f8e71c;
 }
 
-.blogbackground .blogPostImage img {
+.blogwrapper .blogPostImage img {
   width: 100%;
   height: 100%;
   -o-object-fit: cover;
      object-fit: cover;
-}
-
-/* Blog Post */
-.blogwrapper {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  padding-top: 20%;
-  border: 1px solid red;
-  margin: 0 10%;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
 }
 
 .blogwrapper .blogPost {
@@ -154,6 +158,7 @@ main {
   border-bottom: 5px solid #f8e71c;
   width: 50%;
   padding-left: 5%;
+  padding-top: inherit;
 }
 
 .blogwrapper .blogPost h2 {
@@ -162,6 +167,8 @@ main {
   font-weight: bold;
   color: #2c2c2c;
   letter-spacing: 0.081rem;
+  margin-bottom: 0;
+  padding-top: 25px;
 }
 
 .blogwrapper .blogPost p {
@@ -173,15 +180,18 @@ main {
 }
 
 .blogwrapper .blogPost .blogPostDate {
-  /* review */
-  font-weight: lighter;
+  font-style: italic;
+}
+
+.blogwrapper .blogPost .blogPostDate .author {
+  font-weight: 700;
+  font-style: normal;
 }
 
 .blogwrapper aside {
-  width: 40%;
-  border: 1px solid red;
+  width: 30%;
   height: 100%;
-  padding-top: 260px;
+  padding-top: 400px;
   background-color: white;
 }
 
@@ -190,7 +200,7 @@ main {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  top: 400px;
+  top: 100px;
   left: 0;
   margin: 0;
   padding: 0;
@@ -259,7 +269,6 @@ main {
       -ms-flex-align: end;
           align-items: flex-end;
   padding-top: 5%;
-  border: 1px solid red;
   margin: 0 10%;
   /* Post Comment */
 }
@@ -314,6 +323,8 @@ main {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+  margin-top: 10%;
+  margin-bottom: 10%;
 }
 
 .commentsContainer .formContainer form .identification {
@@ -344,17 +355,13 @@ main {
   font-weight: 300;
 }
 
-.commentsContainer .formContainer form input:focus {
-  outline: none;
-  -webkit-box-shadow: 2px solid #074115;
-          box-shadow: 2px solid #074115;
-  -webkit-transition: 180ms -webkit-box-shadow ease-in-out;
-  transition: 180ms -webkit-box-shadow ease-in-out;
-  transition: 180ms box-shadow ease-in-out;
-  transition: 180ms box-shadow ease-in-out, 180ms -webkit-box-shadow ease-in-out;
+.commentsContainer .formContainer form input[type="text"]:focus, .commentsContainer .formContainer form input[type="text"]:active,
+.commentsContainer .formContainer form input[type="email"]:focus,
+.commentsContainer .formContainer form input[type="email"]:active {
+  outline: 2px solid #074115;
 }
 
-.commentsContainer .formContainer form .message input[type="textarea"] {
+.commentsContainer .formContainer form .message textarea {
   border: 2px solid #0e902d;
   background-color: #f0efed;
   width: calc(100% - 4px);
@@ -367,14 +374,18 @@ main {
   transition: 180ms box-shadow ease-in-out, 180ms -webkit-box-shadow ease-in-out;
 }
 
-.commentsContainer .formContainer form .message input[type="textarea"] placeholder {
+.commentsContainer .formContainer form .message textarea placeholder {
   font-family: "Roboto", sans-serif;
   font-size: 1.25rem;
   line-height: 2rem;
   font-weight: 300;
   color: #2c2c2c;
   font-weight: 300;
-  margin-top: 10px;
+  padding: 10px;
+}
+
+.commentsContainer .formContainer form .message textarea:focus, .commentsContainer .formContainer form .message textarea:active {
+  outline: 2px solid #074115;
 }
 
 .commentsContainer .formContainer form button {
