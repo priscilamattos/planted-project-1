@@ -3,9 +3,7 @@
 .contactbackground {
   background-image: url("/Project-Folders/contact/images/contact-header-1.jpg");
   background-repeat: no-repeat;
-  position: relative;
   background-size: cover;
-  height: 500px;
   .wrapperNav {
     margin: 0;
     background-color: rgba(0, 0, 0, 0.5);
@@ -15,18 +13,18 @@
     padding-top: 8px;
     padding-bottom: 3px;
     padding-left: 10%;
-    width: 50%;
     ul {
       display: flex;
       justify-content: space-between;
       align-items: center;
-      padding-left: 0;
+      padding: 0;
       width: 50%;
       li {
         &:first-child {
           a {
             font-size: 42px;
             margin: 0;
+            padding: 0;
           }
         }
         list-style: none;
@@ -62,93 +60,97 @@
 
 main {
   background-color: $plantedwhite;
-}
-.wrapper {
-  padding: 10%;
-  display: flex;
-  .contactInfo {
-    @include bodyText;
-    width: 35%;
-    display: flex;
-    flex-direction: column;
-    line-height: 0.2rem;
-    .emailContact {
-      @include bodyText;
-      font-family: $headFont;
-      font-weight: 700;
-    }
-    .social_media-wrapper {
-      display: flex;
-      width: 50%;
-      justify-content: space-between;
-      color: $plantedGreen;
-      margin-bottom: 1.5rem;
-      i {
-        &:hover {
-          cursor: pointer;
-          color: $plantedDarkGreen;
-        }
-      }
-    }
-  }
 
-  .formContainer {
-    .usermsg {
-      top: 240px;
-      right: 5%;
-      width: 60%;
-      height: 480px;
-      box-shadow: -15px 15px $plantedYellow;
-    }
-    form {
-      width: 700px;
-      margin-right: 0;
-      position: absolute;
+  .container {
+    display: flex;
+    position: relative;
+    .contactInfo {
+      @include bodyText;
+      width: 35%;
       display: flex;
       flex-direction: column;
-      justify-content: space-between;
-      background-color: white;
-      padding: 30px;
-      .identification {
+      line-height: 0.2rem;
+      margin: 0 10%;
+      padding-top: 10%;
+      padding-bottom: 10%;
+      .emailContact {
+        @include bodyText;
+        font-family: $headFont;
+        font-weight: 700;
+      }
+      .social_media-wrapper {
         display: flex;
+        width: 50%;
         justify-content: space-between;
-      }
-      input[type="text"],
-      input[type="email"] {
-        border: none;
-        height: 40px;
-        width: 48%;
-        border-bottom: 2px solid $plantedGreen;
-        placeholder {
-          @include bodyText;
-          font-weight: 300;
-        }
-      }
-      input:focus {
-        outline: none;
-        box-shadow: 2px solid $plantedDarkGreen;
-        transition: 180ms box-shadow ease-in-out;
-      }
-
-      .message {
-        input[type="textarea"] {
-          border: 2px solid $plantedGreen;
-          width: calc(100% - 4px);
-          height: 250px;
-          margin-top: 20px;
-          margin-bottom: 20px;
-          transition: 180ms box-shadow ease-in-out;
-          placeholder {
-            @include bodyText;
-            font-weight: 300;
-            margin-top: 10px;
+        color: $plantedGreen;
+        margin-bottom: 1.5rem;
+        i {
+          &:hover {
+            cursor: pointer;
+            color: $plantedDarkGreen;
           }
         }
       }
-      button {
-        @include buttonStyle;
-        width: 100%;
-        border: none;
+    }
+
+    .formContainer {
+      .usermsg {
+        top: -250px;
+        right: 10%;
+        max-width: 50%;
+        height: 480px;
+        box-shadow: -15px 15px $plantedYellow;
+      }
+      form {
+        width: 700px;
+        margin-right: 0;
+        position: absolute;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        background-color: white;
+        padding: 30px;
+        .identification {
+          display: flex;
+          justify-content: space-between;
+        }
+        input[type="text"],
+        input[type="email"] {
+          border: none;
+          height: 40px;
+          width: 48%;
+          border-bottom: 2px solid $plantedGreen;
+          placeholder {
+            @include bodyText;
+            font-weight: 300;
+          }
+        }
+        input:focus {
+          outline: none;
+          box-shadow: 2px solid $plantedDarkGreen;
+          transition: 180ms box-shadow ease-in-out;
+        }
+
+        .message {
+          input[type="textarea"] {
+            border: 2px solid $plantedGreen;
+            width: calc(100% - 4px);
+            height: 250px;
+            margin-top: 20px;
+            margin-bottom: 20px;
+            transition: 180ms box-shadow ease-in-out;
+            placeholder {
+              @include bodyText;
+              font-weight: 300;
+              margin-top: 10px;
+            }
+          }
+        }
+        button {
+          @include buttonStyle;
+          width: 100%;
+          border: none;
+        }
       }
     }
   }

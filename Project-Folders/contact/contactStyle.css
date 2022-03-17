@@ -28,9 +28,7 @@ footer h5 {
 .contactbackground {
   background-image: url("/Project-Folders/contact/images/contact-header-1.jpg");
   background-repeat: no-repeat;
-  position: relative;
   background-size: cover;
-  height: 500px;
 }
 
 .contactbackground .wrapperNav {
@@ -43,7 +41,6 @@ footer h5 {
   padding-top: 8px;
   padding-bottom: 3px;
   padding-left: 10%;
-  width: 50%;
 }
 
 .contactbackground .topNav ul {
@@ -56,7 +53,7 @@ footer h5 {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  padding-left: 0;
+  padding: 0;
   width: 50%;
 }
 
@@ -67,6 +64,7 @@ footer h5 {
 .contactbackground .topNav ul li:first-child a {
   font-size: 42px;
   margin: 0;
+  padding: 0;
 }
 
 .contactbackground .topNav ul li a {
@@ -109,14 +107,14 @@ main {
   background-color: #f0efed;
 }
 
-.wrapper {
-  padding: 10%;
+main .container {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  position: relative;
 }
 
-.wrapper .contactInfo {
+main .container .contactInfo {
   font-family: "Roboto", sans-serif;
   font-size: 1.25rem;
   line-height: 2rem;
@@ -131,9 +129,12 @@ main {
       -ms-flex-direction: column;
           flex-direction: column;
   line-height: 0.2rem;
+  margin: 0 10%;
+  padding-top: 10%;
+  padding-bottom: 10%;
 }
 
-.wrapper .contactInfo .emailContact {
+main .container .contactInfo .emailContact {
   font-family: "Roboto", sans-serif;
   font-size: 1.25rem;
   line-height: 2rem;
@@ -143,7 +144,7 @@ main {
   font-weight: 700;
 }
 
-.wrapper .contactInfo .social_media-wrapper {
+main .container .contactInfo .social_media-wrapper {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -155,21 +156,21 @@ main {
   margin-bottom: 1.5rem;
 }
 
-.wrapper .contactInfo .social_media-wrapper i:hover {
+main .container .contactInfo .social_media-wrapper i:hover {
   cursor: pointer;
   color: #074115;
 }
 
-.wrapper .formContainer .usermsg {
-  top: 240px;
-  right: 5%;
-  width: 60%;
+main .container .formContainer .usermsg {
+  top: -250px;
+  right: 10%;
+  max-width: 50%;
   height: 480px;
   -webkit-box-shadow: -15px 15px #f8e71c;
           box-shadow: -15px 15px #f8e71c;
 }
 
-.wrapper .formContainer form {
+main .container .formContainer form {
   width: 700px;
   margin-right: 0;
   position: absolute;
@@ -187,7 +188,7 @@ main {
   padding: 30px;
 }
 
-.wrapper .formContainer form .identification {
+main .container .formContainer form .identification {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -196,16 +197,16 @@ main {
           justify-content: space-between;
 }
 
-.wrapper .formContainer form input[type="text"],
-.wrapper .formContainer form input[type="email"] {
+main .container .formContainer form input[type="text"],
+main .container .formContainer form input[type="email"] {
   border: none;
   height: 40px;
   width: 48%;
   border-bottom: 2px solid #0e902d;
 }
 
-.wrapper .formContainer form input[type="text"] placeholder,
-.wrapper .formContainer form input[type="email"] placeholder {
+main .container .formContainer form input[type="text"] placeholder,
+main .container .formContainer form input[type="email"] placeholder {
   font-family: "Roboto", sans-serif;
   font-size: 1.25rem;
   line-height: 2rem;
@@ -214,7 +215,7 @@ main {
   font-weight: 300;
 }
 
-.wrapper .formContainer form input:focus {
+main .container .formContainer form input:focus {
   outline: none;
   -webkit-box-shadow: 2px solid #074115;
           box-shadow: 2px solid #074115;
@@ -224,7 +225,7 @@ main {
   transition: 180ms box-shadow ease-in-out, 180ms -webkit-box-shadow ease-in-out;
 }
 
-.wrapper .formContainer form .message input[type="textarea"] {
+main .container .formContainer form .message input[type="textarea"] {
   border: 2px solid #0e902d;
   width: calc(100% - 4px);
   height: 250px;
@@ -236,7 +237,7 @@ main {
   transition: 180ms box-shadow ease-in-out, 180ms -webkit-box-shadow ease-in-out;
 }
 
-.wrapper .formContainer form .message input[type="textarea"] placeholder {
+main .container .formContainer form .message input[type="textarea"] placeholder {
   font-family: "Roboto", sans-serif;
   font-size: 1.25rem;
   line-height: 2rem;
@@ -246,7 +247,7 @@ main {
   margin-top: 10px;
 }
 
-.wrapper .formContainer form button {
+main .container .formContainer form button {
   font-family: "Josefin Sans", sans-serif;
   font-size: 1.25rem;
   line-height: 2rem;
@@ -260,6 +261,6 @@ main {
   border: none;
 }
 
-.wrapper .formContainer form button:hover {
+main .container .formContainer form button:hover {
   background: #074115;
 }

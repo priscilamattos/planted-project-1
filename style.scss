@@ -1,32 +1,51 @@
 @import "./shared/shared_styles.scss";
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0 auto;
+  background-color: $plantedwhite;
+}
+
+.container {
+  margin: 0 auto;
+  max-width: 1280px;
+  position: relative;
+}
+
 .homeBackground {
   background-image: url("Project-Folders/home/images/home-image-1.jpg");
   background-repeat: no-repeat;
-  position: relative;
   background-size: cover;
+  height: 800px;
   .topNav {
-    margin-left: 0;
     width: 100%;
-    padding-left: 5%;
-    padding-top: 8px;
-    padding-bottom: 3px;
+    height: 100px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    padding-left: 10%;
     position: fixed;
     background-color: rgba(0, 0, 0, 0.5);
     z-index: 10;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    h2 {
+      @include homeh2;
+      color: $plantedwhite;
+      padding-top: 10px;
+    }
     ul {
       display: flex;
       justify-content: space-between;
       align-items: center;
       padding-left: 0;
-      width: 50%;
+      width: 40%;
       li {
-        &:first-child {
-          a {
-            font-size: 42px;
-            margin: 0;
-          }
-        }
         list-style: none;
+        h2,
         a {
           display: flex;
           text-decoration: none;
@@ -42,48 +61,40 @@
       }
     }
   }
-  .plantedHeader {
+}
+
+.header {
+  display: flex;
+  height: 100%;
+  position: relative;
+  margin-top: -80px;
+  align-items: center;
+  div {
+    z-index: 5;
     margin: auto;
-    display: flex;
-    align-items: center;
-    width: 100%;
-    height: 700px;
-
-    .header {
-      width: 60%;
-      display: flex;
-      flex-direction: column;
-      margin: auto;
-      align-items: flex-start;
-
-      h1 {
-        @include homeh1;
-        color: $plantedwhite;
-        letter-spacing: 1.3px;
-        margin: 0;
-        z-index: 5;
-        display: inline;
-        text-align: left;
-        span {
-          color: $plantedYellow;
-        }
-      }
-    }
   }
 
+  h1 {
+    @include homeh1;
+    display: grid;
+    color: $plantedwhite;
+    font-weight: 400;
+    letter-spacing: 1.3px;
+    text-align: left;
+    span {
+      color: $plantedYellow;
+    }
+  }
   .headerImage {
     position: absolute;
-    display: flex;
     bottom: -60px;
     right: 0;
     margin: 0;
-    padding: 0;
-    max-width: 700px;
-    width: 100%;
-    object-fit: cover;
     img {
       width: 100%;
       height: 100%;
+      display: block;
+      position: relative;
       object-fit: cover;
     }
   }
@@ -92,14 +103,10 @@
 // About Planted Section
 .aboutPlanted {
   display: flex;
+  flex-direction: column;
   align-items: center;
-  height: 700px;
-  background-color: $plantedwhite;
   text-align: center;
-  .wrapper {
-    width: 90%;
-    margin: auto;
-  }
+  padding: 100px;
 
   h2 {
     @include homeh2;
@@ -116,21 +123,19 @@
 
 // Blog Section
 article {
-  height: 400px;
-  position: relative;
+  width: 90%;
+  margin: 0 auto;
   .firstBlogContainer {
     display: flex;
+    align-items: center;
     justify-content: space-between;
-    .wrapper {
-      width: 50%;
-    }
+    padding-bottom: 10px;
     .boxImg {
-      top: -50px;
+      display: flex;
       margin: -50px 0 0 0;
       padding: 0;
       width: 45%;
       box-shadow: 15px 15px $plantedYellow;
-
       img {
         width: 100%;
         height: 100%;
@@ -155,17 +160,16 @@ article {
 
   .secondBlogContainer {
     display: flex;
+    align-items: center;
     justify-content: space-between;
-    .wrapper {
-      width: 50%;
-    }
+    padding-top: 10px;
     .boxImg {
+      display: flex;
       margin: 0 0 -50px 0;
       padding: 0;
       bottom: -50px;
       width: 45%;
       box-shadow: -15px 15px $plantedYellow;
-
       img {
         width: 100%;
         height: 100%;
@@ -173,10 +177,9 @@ article {
     }
     .blogPost {
       width: 45%;
-
+      margin: 0 auto;
       padding: 20px 50px 20px 10px;
       text-align: right;
-
       h3 {
         @include homeh4;
       }
@@ -194,26 +197,24 @@ article {
 
 // Services Section
 .servicesContainer {
-  height: 800px;
-  background-color: $plantedwhite;
   display: flex;
-
-  .wrapper {
-    width: 1280px;
-    margin: 10%;
-    display: flex;
-    align-items: center;
-  }
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: white;
   .contentBox {
+    width: 40%;
     display: flex;
     flex-direction: column;
+    margin-top: 100px;
+    margin-bottom: 100px;
     .services {
       display: flex;
       align-items: center;
       i::before {
-        background-color: $plantedYellow;
         padding: 15px;
         border-radius: 50%;
+        background-color: $plantedYellow;
       }
       h3 {
         @include homeh4;
@@ -243,13 +244,8 @@ article {
 
 // Planted's Founder
 .founderProfile {
-  background-color: $plantedwhite;
-  padding-top: 10px;
-  padding-bottom: 10px;
-  .wrapper {
-    @include wrapper;
-    display: flex;
-  }
+  margin: 100px 10%;
+  display: flex;
   .founderImg {
     margin: 0;
     padding: 0;
@@ -264,9 +260,10 @@ article {
     flex-direction: column;
     width: 60%;
     padding-left: 5%;
+    justify-content: space-between;
     h3 {
       @include homeh3;
-      margin-bottom: 0;
+      margin: 0;
     }
     p {
       @include bodyText;
@@ -274,20 +271,128 @@ article {
     }
     a {
       @include buttonStyle;
-      width: 30%;
+      width: 40%;
     }
   }
 }
 
 // Gallery
 .gallery {
-  .wrapper {
-    @include wrapper;
-    display: flex;
-    justify-content: space-between;
-  }
-
+  margin: 100px 10%;
+  display: flex;
+  justify-content: space-between;
   img {
     width: 30%;
+  }
+}
+
+//Menu Mobile Style
+.mobile-container {
+  max-width: 480px;
+  margin: auto;
+  background-color: #555;
+  height: 500px;
+  color: white;
+  border-radius: 10px;
+}
+
+.mobnav {
+  overflow: hidden;
+  background-color: #333;
+  position: relative;
+}
+
+.mobnav #myLinks {
+  display: none;
+}
+
+//Media Style
+@media (max-width: 480px) {
+  .homeBackground {
+    height: 420px;
+  }
+  .topNav {
+    overflow: hidden;
+  }
+
+  .header {
+    h1 {
+      font-size: 5rem;
+    }
+  }
+
+  .headerImage {
+    width: 50%;
+  }
+
+  .aboutPlanted {
+    padding-top: 100px;
+    padding-left: 10%;
+    padding-right: 10%;
+    h2 {
+      font-size: 2.5rem;
+    }
+    p {
+      padding: 0;
+    }
+  }
+  article {
+    .firstBlogContainer,
+    .secondBlogContainer {
+      flex-direction: column;
+      .blogPost {
+        width: 100%;
+        text-align: center;
+        padding-top: 30px;
+        p {
+          padding-left: 0;
+          padding-right: 0;
+        }
+      }
+      .boxImg {
+        width: 100%;
+        margin: 0 0 -5px 0;
+        bottom: 0;
+      }
+    }
+  }
+  .servicesContainer {
+    flex-direction: column;
+    .contentBox {
+      width: 100%;
+      padding-right: 10%;
+      padding-left: 10%;
+      margin-top: 10%;
+      margin-bottom: 10%;
+      p {
+        width: 100%;
+      }
+    }
+    .servicesText {
+      p {
+        width: 100%;
+      }
+    }
+  }
+
+  .founderProfile {
+    flex-direction: column;
+    .founderText {
+      width: 100%;
+      padding-left: 0;
+      a {
+        width: 100%;
+      }
+    }
+    img {
+      padding-bottom: 10%;
+    }
+  }
+
+  .gallery {
+    flex-direction: column;
+    img {
+      width: 100%;
+    }
   }
 }
