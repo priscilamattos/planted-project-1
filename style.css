@@ -533,8 +533,17 @@ article .secondBlogContainer .blogPost a:hover {
   .homeBackground {
     height: 420px;
   }
-  .topNav {
-    overflow: hidden;
+  .topNav h2 {
+    font-size: 1rem;
+    text-align: center;
+    padding: 5px;
+    width: 100%;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .topNav ul {
+    display: none;
   }
   .header h1 {
     font-size: 5rem;

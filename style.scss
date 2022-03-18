@@ -312,7 +312,16 @@ article {
     height: 420px;
   }
   .topNav {
-    overflow: hidden;
+    h2 {
+      font-size: 1rem;
+      text-align: center;
+      padding: 5px;
+      width: 100%;
+      justify-content: center;
+    }
+    ul {
+      display: none;
+    }
   }
 
   .header {
