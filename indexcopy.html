@@ -10,7 +10,7 @@
       href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300;400;700&family=Roboto&display=swap"
       rel="stylesheet"
     />
-    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="stylecopy.css" />
     <script
       src="https://kit.fontawesome.com/dbb28dec5b.js"
       crossorigin="anonymous"
@@ -18,47 +18,45 @@
     <title>Planted</title>
   </head>
   <body>
-    <header>
-      <div class="homeBackground">
-        <div class="container">
-          <nav class="topNav">
-            <div class="logo">
-              <h2>Planted</h2>
-              <div id="hamburger-icon" onClick="toggleMenu()">
-                <div class="bar1"></div>
-                <div class="bar2"></div>
-                <div class="bar3"></div>
-              </div>
-              <ul>
-                <li><a href="#home">HOME</a></li>
-                <li><a href="#about">ABOUT</a></li>
-                <li><a href="#blog">BLOG</a></li>
-                <li><a href="#contact">CONTACT</a></li>
-              </ul>
-            </div>
-          </nav>
-          <!-- Top Navigation Menu -->
-          <div id="topNavMobile">
-            <ul>
-              <li><a href="#home">HOME</a></li>
-              <li><a href="#about">ABOUT</a></li>
-              <li><a href="#blog">BLOG</a></li>
-              <li><a href="#contact">CONTACT</a></li>
-            </ul>
-          </div>
+    <header class="homeBackground">
+      <div class="navbar">
+        <!-- Top Navigation Menu -->
+        <div id="hamburger-icon" onClick="toggleMenu()">
+          <div class="bar1"></div>
+          <div class="bar2"></div>
+          <div class="bar3"></div>
         </div>
 
-        <div class="header">
-          <div>
-            <h1>Planted <span class="secondWord">invitation</span></h1>
-          </div>
-          <figure class="headerImage">
-            <img
-              src="./Project-Folders/home/images/header-box.jpg"
-              alt="header plant"
-            />
-          </figure>
+        <div class="logo">
+          <h2>Planted</h2>
         </div>
+        <nav class="menu">
+          <ul>
+            <li><a href="#home">HOME</a></li>
+            <li><a href="#about">ABOUT</a></li>
+            <li><a href="#blog">BLOG</a></li>
+            <li><a href="#contact">CONTACT</a></li>
+          </ul>
+        </nav>
+      </div>
+      <div id="topNavMobile">
+        <ul>
+          <li><a href="#home">HOME</a></li>
+          <li><a href="#about">ABOUT</a></li>
+          <li><a href="#blog">BLOG</a></li>
+          <li><a href="#contact">CONTACT</a></li>
+        </ul>
+      </div>
+      <div class="main-header">
+        <div>
+          <h1>Planted <span class="secondWord">invitation</span></h1>
+        </div>
+        <figure class="headerImage">
+          <img
+            src="./Project-Folders/home/images/header-box.jpg"
+            alt="header plant"
+          />
+        </figure>
       </div>
     </header>
     <main>
