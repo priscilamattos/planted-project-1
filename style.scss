@@ -23,7 +23,7 @@ header {
 // <!--Header-->
 
 .homeBackground {
-  background-image: url("Project-Folders/home/images/home-image-1.jpg");
+  background-image: url("/assets/home-image-1.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   height: 800px;
@@ -33,6 +33,7 @@ header {
     position: relative;
     margin-top: -80px;
     align-items: center;
+    pointer-events: none;
     div {
       z-index: 5;
       margin: auto;
@@ -64,7 +65,7 @@ header {
     }
   }
 }
-// About Planted Section
+// <!--About Planted Section-->
 .aboutPlanted {
   display: flex;
   flex-direction: column;
@@ -84,8 +85,7 @@ header {
     @include buttonStyle;
   }
 }
-
-// Blog Section
+// <!--Blog Section-->
 article {
   width: 90%;
   margin: 0 auto;
@@ -159,7 +159,7 @@ article {
   }
 }
 
-// Services Section
+// <!--Services Section-->
 .servicesContainer {
   display: flex;
   display: flex;
@@ -196,7 +196,7 @@ article {
   }
 }
 
-// Banner
+// <!--Banner Section-->
 .bannerHome {
   margin: 0;
   padding: 0;
@@ -206,7 +206,7 @@ article {
   }
 }
 
-// Planted's Founder
+// <!--Planted's Founder-->
 .founderProfile {
   margin: 100px 10%;
   display: flex;
@@ -240,7 +240,7 @@ article {
   }
 }
 
-// Gallery
+// <!--Gallery-->
 .gallery {
   margin: 100px 10%;
   display: flex;
@@ -254,7 +254,8 @@ article {
   display: none;
 }
 
-//Media Style
+// <!--Serv Section-->
+
 @media (max-width: 680px) {
   @include mobile-menu;
 
@@ -264,7 +265,7 @@ article {
 
   .main-header {
     h1 {
-      font-size: 5rem;
+      font-size: 3rem !important;
       margin-top: 170px !important;
     }
     .headerImage {
@@ -290,7 +291,7 @@ article {
       .blogPost {
         width: 100%;
         text-align: center;
-        padding-top: 30px;
+        padding: 0;
         p {
           padding-left: 0;
           padding-right: 0;
@@ -298,19 +299,26 @@ article {
       }
       .boxImg {
         width: 100%;
-        margin: 0 0 -5px 0;
+        padding: 0 0 -50px 0;
         bottom: 0;
+      }
+    }
+    .secondBlogContainer {
+      .blogPost {
+        margin-bottom: 50px;
       }
     }
   }
   .servicesContainer {
     flex-direction: column;
+    padding-top: 100px;
+    padding-bottom: 100px;
     .contentBox {
       width: 100%;
       padding-right: 10%;
       padding-left: 10%;
-      margin-top: 10%;
-      margin-bottom: 10%;
+      margin-top: 0;
+      margin-bottom: 0;
       p {
         width: 100%;
       }

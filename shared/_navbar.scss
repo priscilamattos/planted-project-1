@@ -36,19 +36,21 @@
         list-style: none;
         h2,
         a {
-          //   text-decoration: none;
           color: $plantedwhite;
           font-size: 20px;
           letter-spacing: 1px;
           font-family: $headFont;
           font-weight: 400;
           padding: 0 5px;
-          &::hover {
+          &:hover {
             color: $plantedYellow;
             cursor: pointer;
           }
         }
       }
+    }
+    .menuYellow {
+      color: $plantedYellow;
     }
   }
 }

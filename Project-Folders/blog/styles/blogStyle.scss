@@ -18,55 +18,8 @@ main {
   background-repeat: no-repeat;
   background-size: cover;
   height: 500px;
-  .navbar {
-    position: fixed;
-    top: 0;
-    width: 100%;
-    background-color: rgba(0, 0, 0, 0.5);
-    display: flex;
-    align-items: center;
-    padding: 0;
-    padding-left: 10%;
-    .logo {
-      h2 {
-        @include homeh2;
-        color: $plantedwhite;
-        margin: 0;
-      }
-    }
-    .menu {
-      width: 100%;
-      height: 80px;
-      display: flex;
-      justify-content: flex-start;
-      align-items: center;
-      margin-left: 20px;
-
-      ul {
-        display: flex;
-        justify-content: space-around;
-        align-items: center;
-        padding-left: 0;
-        li {
-          list-style: none;
-          h2,
-          a {
-            text-decoration: none;
-            color: $plantedwhite;
-            font-size: 20px;
-            letter-spacing: 1px;
-            font-family: $headFont;
-            font-weight: 400;
-            padding: 0 5px;
-            &:hover {
-              color: $plantedYellow;
-            }
-          }
-        }
-      }
-    }
-  }
 }
+
 #topNavMobile {
   display: none;
 }
@@ -336,7 +289,6 @@ main {
     flex-direction: row;
     .flexcomments {
       width: 100%;
-      padding-right: 10%;
       p {
         width: 100%;
       }
@@ -345,6 +297,16 @@ main {
       margin: auto;
       .usermsg {
         width: 100%;
+
+        .identification {
+          flex-direction: column;
+          width: 100%;
+
+          input[type="text"],
+          input[type="email"] {
+            width: 100%;
+          }
+        }
       }
     }
   }

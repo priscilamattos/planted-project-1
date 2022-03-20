@@ -2,7 +2,7 @@
 
 @mixin mobile-menu {
   #topNavMobile {
-    display: block;
+    display: none;
     @include bodyText;
     position: fixed;
     top: 80px;
@@ -22,7 +22,7 @@
         padding: 14px 16px;
         cursor: pointer;
         display: block;
-        &::hover {
+        &:hover {
           background-color: $plantedwhite;
           color: $plantedBlack;
         }
