@@ -1,9 +1,5 @@
 @import "../../../shared/shared_styles.scss";
 
-body {
-  margin: 0 auto;
-}
-
 .container {
   margin: 0 auto;
   max-width: 1280px;
@@ -83,7 +79,7 @@ main {
     }
   }
   aside {
-    width: 30%;
+    width: 40%;
     height: 100%;
     padding-top: 400px;
     background-color: rgb(255, 255, 255);
@@ -212,36 +208,10 @@ main {
     bottom: 0;
   }
 }
-//Media Style
-@media (min-width: 961px) and (max-width: 1100px) {
-  .homeBackground {
-    height: 420px;
-    .sectionTitle {
-      display: flex;
-      height: 250px;
-      h2 {
-        font-size: 4rem;
-        width: 100%;
-        text-align: center;
-      }
-    }
-  }
 
-  .blogwrapper {
-    aside {
-      width: 100%;
-      .aboutImageContainer {
-        justify-content: space-evenly;
-        position: initial;
-      }
-    }
-  }
-}
-
-@media (max-width: 960px) {
+// Media Style
+@media (max-width: 1200px) {
   @include mobile-menu;
-  //
-
   .homeBackground {
     height: 420px;
     .contactHeader {

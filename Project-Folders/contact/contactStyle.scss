@@ -5,7 +5,6 @@
 }
 
 body {
-  margin: 0 auto;
   background-color: $plantedwhite;
   min-height: 100vh;
 }
@@ -52,7 +51,7 @@ header {
   bottom: 0;
   padding-left: 10%;
 }
-
+// <!--Main-->
 main {
   background-color: $plantedwhite;
 
@@ -86,7 +85,7 @@ main {
         }
       }
     }
-
+    // <!--Contact Form-->
     .formContainer {
       .usermsg {
         top: -250px;

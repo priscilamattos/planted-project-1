@@ -1,6 +1,7 @@
 // Navbar
 .navbar {
   position: fixed;
+  z-index: 50;
   top: 0;
   width: 100%;
   background-color: rgba(0, 0, 0, 0.5);
