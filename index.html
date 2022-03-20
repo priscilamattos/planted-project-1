@@ -10,7 +10,7 @@
       href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300;400;700&family=Roboto&display=swap"
       rel="stylesheet"
     />
-    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="/style.css" />
     <script
       src="https://kit.fontawesome.com/dbb28dec5b.js"
       crossorigin="anonymous"
@@ -24,17 +24,19 @@
           <h2>Planted</h2>
         </div>
         <!-- Top Navigation Menu -->
-        <div id="hamburger-icon" onClick="toggleMenu()">
+        <div id="hamburger-icon" aria-label="navbar" onClick="toggleMenu()">
           <div class="bar1"></div>
           <div class="bar2"></div>
           <div class="bar3"></div>
         </div>
-        <nav class="menu">
+        <nav class="menu" aria-label="navbar">
           <ul>
             <li><a href="#home">HOME</a></li>
             <li><a href="#about">ABOUT</a></li>
-            <li><a href="#blog">BLOG</a></li>
-            <li><a href="#contact">CONTACT</a></li>
+            <li><a href="./Project-Folders/blog/blog.html">BLOG</a></li>
+            <li>
+              <a href="./Project-Folders/contact/contact.html">CONTACT</a>
+            </li>
           </ul>
         </nav>
       </div>
@@ -59,7 +61,7 @@
       </div>
     </header>
     <main>
-      <section class="aboutPlanted">
+      <section class="aboutPlanted" id="#home" aria-label="about">
         <h2>What is Planted?</h2>
         <p>
           Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc accumsan
@@ -70,7 +72,7 @@
         </p>
         <a href="#">Find Out More</a>
       </section>
-      <section>
+      <section aria-label="blog">
         <article>
           <div class="firstBlogContainer">
             <figure class="boxImg">
@@ -112,7 +114,7 @@
           </div>
         </article>
       </section>
-      <section class="servicesContainer">
+      <section class="servicesContainer" aria-label="services">
         <div class="contentBox">
           <div class="services">
             <i class="fa-solid fa-leaf fa-lg" aria-hidden="true"></i>
@@ -168,7 +170,7 @@
           alt="Home Banner"
         />
       </figure>
-      <section class="founderProfile">
+      <section class="founderProfile" id="#about" aria-label="profile">
         <figure class="founderImg">
           <img
             src="./Project-Folders/home/images/founder.jpg"
@@ -186,7 +188,7 @@
           <a href="#">Find Out More</a>
         </div>
       </section>
-      <section class="gallery">
+      <section class="gallery" aria-label="gallery">
         <img
           src="./Project-Folders/home/images/gallery-image-1.jpg"
           alt="Garden"

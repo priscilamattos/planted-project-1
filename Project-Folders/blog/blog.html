@@ -40,10 +40,10 @@
       </div>
       <div id="topNavMobile">
         <ul>
-          <li><a href="#home">HOME</a></li>
+          <li><a href="/index.html">HOME</a></li>
           <li><a href="#about">ABOUT</a></li>
-          <li><a href="#blog">BLOG</a></li>
-          <li><a href="#contact">CONTACT</a></li>
+          <li><a href="#">BLOG</a></li>
+          <li><a href="/Project-Folders/contact/contact.html">CONTACT</a></li>
         </ul>
       </div>
       <div class="contactHeader">
@@ -146,14 +146,29 @@
             <div class="formContainer">
               <form class="usermsg">
                 <div class="identification">
-                  <input type="text" placeholder="Name" id="name" />
-                  <input type="email" placeholder="Email address" id="email" />
+                  <label for="name" class="sr-only">Name</label>
+                  <input
+                    type="text"
+                    placeholder="Name"
+                    id="name"
+                    aria-label="Your Name"
+                  />
+                  <label for="email" class="sr-only">Email</label>
+                  <input
+                    type="email"
+                    placeholder="Email address"
+                    id="email"
+                    aria-label="Email Address"
+                  />
                 </div>
                 <div class="message">
+                  <label for="textarea" class="sr-only">Comment</label>
+
                   <textarea
                     id="sendComment"
                     placeholder="Comment"
                     name="sendComment"
+                    aria-label="Send Your Comment"
                     rows="4"
                     cols="50"
                   >
@@ -169,5 +184,6 @@
     <footer>
       <h5>2022 - Juno College - Priscila Mattos - Cohort 40</h5>
     </footer>
+    <script src="/planted.js"></script>
   </body>
 </html>
