@@ -10,7 +10,7 @@
       href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300;400;700&family=Roboto&display=swap"
       rel="stylesheet"
     />
-    <link rel="stylesheet" href="../contact/contactStyle.css" />
+    <link rel="stylesheet" href="./contactStyle.css" />
     <script
       src="https://kit.fontawesome.com/dbb28dec5b.js"
       crossorigin="anonymous"
@@ -18,23 +18,37 @@
     <title>Planted</title>
   </head>
   <body>
-    <header>
-      <div class="contactbackground">
-        <div class="wrapperNav">
-          <nav class="topNav">
-            <ul>
-              <li><a href="#">Planted</a></li>
-              <li><a href="../../index.html">HOME</a></li>
-              <li><a href="#">ABOUT</a></li>
-              <li><a href="../blog/blog.html">BLOG</a></li>
-              <li><a href="#">CONTACT</a></li>
-            </ul>
-          </nav>
+    <header class="homeBackground">
+      <div class="navbar">
+        <div class="logo">
+          <h2>Planted</h2>
         </div>
-        <div class="contactHeader">
-          <div class="sectionTitle">
-            <h2>Get in <br />Touch</h2>
-          </div>
+        <!-- Top Navigation Menu -->
+        <div id="hamburger-icon" onClick="toggleMenu()">
+          <div class="bar1"></div>
+          <div class="bar2"></div>
+          <div class="bar3"></div>
+        </div>
+        <nav class="menu">
+          <ul>
+            <li><a href="#home">HOME</a></li>
+            <li><a href="#about">ABOUT</a></li>
+            <li><a href="#blog">BLOG</a></li>
+            <li><a href="#contact">CONTACT</a></li>
+          </ul>
+        </nav>
+      </div>
+      <div id="topNavMobile">
+        <ul>
+          <li><a href="#home">HOME</a></li>
+          <li><a href="#about">ABOUT</a></li>
+          <li><a href="#blog">BLOG</a></li>
+          <li><a href="#contact">CONTACT</a></li>
+        </ul>
+      </div>
+      <div class="contactHeader">
+        <div class="sectionTitle">
+          <h2>Get in Touch</h2>
         </div>
       </div>
     </header>

@@ -1,23 +1,60 @@
 // <-Mobile Menu->
 
 @mixin mobile-menu {
-  .logo {
+  #topNavMobile {
+    display: block;
+    @include bodyText;
+    position: fixed;
+    top: 80px;
+    width: 100%;
+    background: $plantedYellow;
+    z-index: 50;
+    ul {
+      padding: 0;
+    }
+    li {
+      list-style: none;
+      text-align: center;
+      a {
+        color: $plantedBlack;
+        font-weight: 700;
+        font-size: 20px;
+        padding: 14px 16px;
+        cursor: pointer;
+        display: block;
+        &::hover {
+          background-color: $plantedwhite;
+          color: $plantedBlack;
+        }
+      }
+    }
+  }
+  .navbar {
+    z-index: 50;
+    height: 80px;
+    justify-content: space-between;
+    padding-top: 5px;
+    background-color: black;
+    position: fixed;
+    #hamburger-icon {
+      margin-right: 10%;
+      padding-right: 10%;
+      cursor: pointer;
+    }
+  }
+
+  .menu {
     display: none !important;
   }
 
-  .mobile-menu {
-    display: none;
-    position: absolute;
-    top: 50px;
-    left: 0;
-    height: calc(100vh - 50px);
-    width: 100%;
-  }
-
-  #hamburger-icon {
-    margin: auto 0;
-    padding-right: 10px;
-    cursor: pointer;
+  .logo {
+    display: flex;
+    align-items: center;
+    h2 {
+      @include homeh2;
+      color: $plantedwhite;
+      margin: 0;
+    }
   }
 
   #hamburger-icon div {
@@ -26,29 +63,6 @@
     background: white;
     margin: 6px 0;
     transition: 0.4s;
-  }
-}
-
-.main-header {
-  h1 {
-    font-size: 16px !important;
-  }
-}
-
-#topNavMobile {
-  @include bodyText;
-  position: fixed;
-  top: 80px;
-  width: 100%;
-  background: $plantedBlack;
-  z-index: 50;
-  li {
-    list-style: none;
-    a {
-      color: $plantedYellow;
-      font-weight: bold;
-      cursor: pointer;
-    }
   }
 }
 

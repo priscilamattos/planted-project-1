@@ -25,33 +25,6 @@ footer h5 {
   bottom: 0;
 }
 
-.main-header h1 {
-  font-size: 16px !important;
-}
-
-#topNavMobile {
-  font-family: "Roboto", sans-serif;
-  font-size: 1.25rem;
-  line-height: 2rem;
-  font-weight: 300;
-  color: #2c2c2c;
-  position: fixed;
-  top: 80px;
-  width: 100%;
-  background: #2c2c2c;
-  z-index: 50;
-}
-
-#topNavMobile li {
-  list-style: none;
-}
-
-#topNavMobile li a {
-  color: #f8e71c;
-  font-weight: bold;
-  cursor: pointer;
-}
-
 .open .bar1 {
   -webkit-transform: rotate(-45deg) translate(-6px, 6px);
   transform: rotate(-45deg) translate(-6px, 6px);
@@ -66,82 +39,144 @@ footer h5 {
   transform: rotate(45deg) translate(-6px, -8px);
 }
 
-.contactbackground {
-  background-image: url("/Project-Folders/contact/images/contact-header-1.jpg");
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  margin: 0 auto;
+  background-color: #f0efed;
+  min-height: 100vh;
+}
+
+main {
+  padding-bottom: 40px;
+  /* Footer height */
+}
+
+header {
+  position: relative;
+  padding: 0;
+  margin: 0;
+  width: 100%;
+  height: 600px;
+}
+
+footer {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 40px;
+  /* Footer height */
+}
+
+.container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin: 0 10%;
+  height: 60vh;
+  max-width: 1280px;
+  position: relative;
+}
+
+.homeBackground {
+  background-image: url("./images/contact-header-1.jpg");
   background-repeat: no-repeat;
   background-size: cover;
 }
 
-.contactbackground .wrapperNav {
-  margin: 0;
+.homeBackground .navbar {
+  position: fixed;
+  top: 0;
+  width: 100%;
   background-color: rgba(0, 0, 0, 0.5);
-  z-index: 10;
-}
-
-.contactbackground .topNav {
-  padding-top: 8px;
-  padding-bottom: 3px;
-  padding-left: 10%;
-}
-
-.contactbackground .topNav ul {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
   padding: 0;
-  width: 50%;
+  padding-left: 10%;
 }
 
-.contactbackground .topNav ul li {
-  list-style: none;
-}
-
-.contactbackground .topNav ul li:first-child a {
-  font-size: 42px;
+.homeBackground .navbar h2 {
+  font-family: "Josefin Sans", sans-serif;
+  font-size: 3.5rem;
+  font-weight: bold;
+  color: #2c2c2c;
+  letter-spacing: 0.08rem;
+  color: #f8e71c;
   margin: 0;
-  padding: 0;
 }
 
-.contactbackground .topNav ul li a {
+.homeBackground .navbar .menu {
+  width: 100%;
+  height: 80px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-left: 20px;
+}
+
+.homeBackground .navbar .menu ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding-left: 0;
+}
+
+.homeBackground .navbar .menu ul li {
+  list-style: none;
+}
+
+.homeBackground .navbar .menu ul li h2,
+.homeBackground .navbar .menu ul li a {
   text-decoration: none;
   color: #f0efed;
   font-size: 20px;
   letter-spacing: 1px;
   font-family: "Josefin Sans", sans-serif;
   font-weight: 400;
+  padding: 0 5px;
 }
 
-.contactbackground .topNav ul li a:hover {
+.homeBackground .navbar .menu ul li h2:hover,
+.homeBackground .navbar .menu ul li a:hover {
   color: #f8e71c;
 }
 
-.contactbackground .contactHeader {
-  margin-left: 10%;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  height: 410px;
-  -webkit-box-align: end;
-      -ms-flex-align: end;
-          align-items: flex-end;
-}
-
-.contactbackground .contactHeader .sectionTitle h2 {
+.homeBackground .sectionTitle h2 {
   font-family: "Josefin Sans", sans-serif;
   font-weight: 700;
   font-size: 5rem;
   line-height: 5.75rem;
   color: #f8e71c;
   text-align: left;
+  width: 50%;
+}
+
+#topNavMobile {
+  display: none;
+}
+
+.contactHeader {
+  position: absolute;
+  bottom: 0;
+  padding-left: 10%;
 }
 
 main {
@@ -170,7 +205,6 @@ main .container .contactInfo {
       -ms-flex-direction: column;
           flex-direction: column;
   line-height: 0.2rem;
-  margin: 0 10%;
   padding-top: 10%;
   padding-bottom: 10%;
 }
@@ -204,9 +238,6 @@ main .container .contactInfo .social_media-wrapper i:hover {
 
 main .container .formContainer .usermsg {
   top: -250px;
-  right: 10%;
-  max-width: 50%;
-  height: 480px;
   -webkit-box-shadow: -15px 15px #f8e71c;
           box-shadow: -15px 15px #f8e71c;
 }
@@ -304,4 +335,140 @@ main .container .formContainer form button {
 
 main .container .formContainer form button:hover {
   background: #074115;
+}
+
+@media (max-width: 960px) {
+  #topNavMobile {
+    display: block;
+    font-family: "Roboto", sans-serif;
+    font-size: 1.25rem;
+    line-height: 2rem;
+    font-weight: 300;
+    color: #2c2c2c;
+    position: fixed;
+    top: 80px;
+    width: 100%;
+    background: #f8e71c;
+    z-index: 50;
+  }
+  #topNavMobile ul {
+    padding: 0;
+  }
+  #topNavMobile li {
+    list-style: none;
+    text-align: center;
+  }
+  #topNavMobile li a {
+    color: #2c2c2c;
+    font-weight: 700;
+    font-size: 20px;
+    padding: 14px 16px;
+    cursor: pointer;
+    display: block;
+  }
+  #topNavMobile li a::hover {
+    background-color: #f0efed;
+    color: #2c2c2c;
+  }
+  .navbar {
+    z-index: 50;
+    height: 80px;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    padding-top: 5px;
+    background-color: black;
+    position: fixed;
+  }
+  .navbar #hamburger-icon {
+    margin-right: 10%;
+    padding-right: 10%;
+    cursor: pointer;
+  }
+  .menu {
+    display: none !important;
+  }
+  .logo {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .logo h2 {
+    font-family: "Josefin Sans", sans-serif;
+    font-size: 3.5rem;
+    font-weight: bold;
+    color: #2c2c2c;
+    letter-spacing: 0.08rem;
+    color: #f0efed;
+    margin: 0;
+  }
+  #hamburger-icon div {
+    width: 35px;
+    height: 3px;
+    background: white;
+    margin: 6px 0;
+    -webkit-transition: 0.4s;
+    transition: 0.4s;
+  }
+  #topNavMobile {
+    display: block;
+    text-align: end;
+    padding-right: 10%;
+  }
+  .menu {
+    display: none !important;
+  }
+  .logo {
+    text-align: center;
+    font-size: 1rem;
+  }
+  .homeBackground {
+    height: 420px;
+  }
+  .homeBackground .sectionTitle h2 {
+    font-size: 3rem;
+    width: 100%;
+    text-align: center;
+  }
+  .homeBackground .navbar {
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    padding-top: 5px;
+  }
+  .homeBackground .navbar #hamburger-icon {
+    padding-right: 10%;
+  }
+  .topNav h2 {
+    font-size: 1rem;
+    text-align: center;
+    padding: 5px;
+    width: 100%;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .topNav ul {
+    display: none;
+  }
+  main .container {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: column-reverse;
+            flex-direction: column-reverse;
+    height: auto;
+  }
+  main .container .contactInfo {
+    width: 100%;
+  }
+  main .container form {
+    position: initial !important;
+  }
+  main .container .usermsg {
+    max-width: 100%;
+    top: 0;
+  }
 }

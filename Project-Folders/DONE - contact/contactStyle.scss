@@ -1,0 +1,266 @@
+@import "../../shared/shared_styles.scss";
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0 auto;
+  background-color: $plantedwhite;
+  min-height: 100vh;
+}
+main {
+  padding-bottom: 40px; /* Footer height */
+}
+
+header {
+  position: relative;
+  padding: 0;
+  margin: 0;
+  width: 100%;
+  height: 600px;
+}
+footer {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 40px; /* Footer height */
+}
+
+.container {
+  display: flex;
+  margin: 0 10%;
+  height: 60vh;
+  max-width: 1280px;
+  position: relative;
+}
+
+// <!--Header-->
+
+.homeBackground {
+  background-image: url("./images/contact-header-1.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  .navbar {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: flex;
+    align-items: center;
+    padding: 0;
+    padding-left: 10%;
+    h2 {
+      @include homeh2;
+      color: $plantedYellow;
+      margin: 0;
+    }
+    .menu {
+      width: 100%;
+      height: 80px;
+      display: flex;
+      justify-content: flex-start;
+      align-items: center;
+      margin-left: 20px;
+
+      ul {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        padding-left: 0;
+        li {
+          list-style: none;
+          h2,
+          a {
+            text-decoration: none;
+            color: $plantedwhite;
+            font-size: 20px;
+            letter-spacing: 1px;
+            font-family: $headFont;
+            font-weight: 400;
+            padding: 0 5px;
+            &:hover {
+              color: $plantedYellow;
+            }
+          }
+        }
+      }
+    }
+  }
+  .sectionTitle {
+    h2 {
+      @include contentTitle;
+      text-align: left;
+      width: 50%;
+    }
+  }
+}
+#topNavMobile {
+  display: none;
+}
+.contactHeader {
+  position: absolute;
+  bottom: 0;
+  padding-left: 10%;
+}
+
+main {
+  background-color: $plantedwhite;
+
+  .container {
+    display: flex;
+    position: relative;
+    .contactInfo {
+      @include bodyText;
+      width: 35%;
+      display: flex;
+      flex-direction: column;
+      line-height: 0.2rem;
+      padding-top: 10%;
+      padding-bottom: 10%;
+      .emailContact {
+        @include bodyText;
+        font-family: $headFont;
+        font-weight: 700;
+      }
+      .social_media-wrapper {
+        display: flex;
+        width: 50%;
+        justify-content: space-between;
+        color: $plantedGreen;
+        margin-bottom: 1.5rem;
+        i {
+          &:hover {
+            cursor: pointer;
+            color: $plantedDarkGreen;
+          }
+        }
+      }
+    }
+
+    .formContainer {
+      .usermsg {
+        top: -250px;
+        box-shadow: -15px 15px $plantedYellow;
+      }
+      form {
+        width: 700px;
+        margin-right: 0;
+        position: absolute;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        background-color: white;
+        padding: 30px;
+        .identification {
+          display: flex;
+          justify-content: space-between;
+        }
+        input[type="text"],
+        input[type="email"] {
+          border: none;
+          height: 40px;
+          width: 48%;
+          border-bottom: 2px solid $plantedGreen;
+          placeholder {
+            @include bodyText;
+            font-weight: 300;
+          }
+        }
+        input:focus {
+          outline: none;
+          box-shadow: 2px solid $plantedDarkGreen;
+          transition: 180ms box-shadow ease-in-out;
+        }
+
+        .message {
+          input[type="textarea"] {
+            border: 2px solid $plantedGreen;
+            width: calc(100% - 4px);
+            height: 250px;
+            margin-top: 20px;
+            margin-bottom: 20px;
+            transition: 180ms box-shadow ease-in-out;
+            placeholder {
+              @include bodyText;
+              font-weight: 300;
+              margin-top: 10px;
+            }
+          }
+        }
+        button {
+          @include buttonStyle;
+          width: 100%;
+          border: none;
+        }
+      }
+    }
+  }
+}
+
+//Media Style
+@media (max-width: 960px) {
+  @include mobile-menu;
+  #topNavMobile {
+    display: block;
+    text-align: end;
+    padding-right: 10%;
+  }
+
+  .menu {
+    display: none !important;
+  }
+
+  .logo {
+    text-align: center;
+    font-size: 1rem;
+  }
+
+  .homeBackground {
+    height: 420px;
+    .sectionTitle {
+      h2 {
+        font-size: 3rem;
+        width: 100%;
+        text-align: center;
+      }
+    }
+    .navbar {
+      justify-content: space-between;
+      padding-top: 5px;
+      #hamburger-icon {
+        padding-right: 10%;
+      }
+    }
+  }
+
+  .topNav {
+    h2 {
+      font-size: 1rem;
+      text-align: center;
+      padding: 5px;
+      width: 100%;
+      justify-content: center;
+    }
+    ul {
+      display: none;
+    }
+  }
+
+  main {
+    .container {
+      flex-direction: column-reverse;
+      height: auto;
+      .contactInfo {
+        width: 100%;
+      }
+      form {
+        position: initial !important;
+      }
+      .usermsg {
+        max-width: 100%;
+        top: 0;
+      }
+    }
+  }
+}
