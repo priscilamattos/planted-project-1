@@ -424,7 +424,7 @@ main .container .formContainer form button:hover {
     transition: 0.4s;
   }
   #topNavMobile {
-    display: block;
+    display: none;
     text-align: end;
     padding-right: 10%;
   }
@@ -487,6 +487,9 @@ main .container .formContainer form button:hover {
   main .container form .identification input[type="text"],
   main .container form .identification input[type="email"] {
     width: 100%;
+  }
+  main .container .social_media-wrapper {
+    padding-top: 10px;
   }
   main .container .usermsg {
     max-width: 100%;

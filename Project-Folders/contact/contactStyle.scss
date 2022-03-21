@@ -147,7 +147,7 @@ main {
 @media (max-width: 960px) {
   @include mobile-menu;
   #topNavMobile {
-    display: block;
+    display: none;
     text-align: end;
     padding-right: 10%;
   }
@@ -210,6 +210,9 @@ main {
             width: 100%;
           }
         }
+      }
+      .social_media-wrapper {
+        padding-top: 10px;
       }
       .usermsg {
         max-width: 100%;
