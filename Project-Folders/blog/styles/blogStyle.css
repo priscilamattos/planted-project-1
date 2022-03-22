@@ -509,7 +509,6 @@ main {
     position: fixed;
   }
   .navbar #hamburger-icon {
-    margin-right: 10%;
     padding-right: 10%;
     cursor: pointer;
   }

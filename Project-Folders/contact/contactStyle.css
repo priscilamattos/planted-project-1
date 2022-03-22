@@ -5,7 +5,7 @@ body {
   margin: 0 auto;
   padding: 0;
   -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+  box-sizing: border-box;
 }
 
 body a {
@@ -52,11 +52,11 @@ footer h5 {
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
   -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
   padding: 0;
   padding-left: 10%;
 }
@@ -66,8 +66,8 @@ footer h5 {
   display: -ms-flexbox;
   display: flex;
   -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
 }
 
 .navbar .logo h2 {
@@ -87,11 +87,11 @@ footer h5 {
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: start;
-      -ms-flex-pack: start;
-          justify-content: flex-start;
+  -ms-flex-pack: start;
+  justify-content: flex-start;
   -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
   margin-left: 20px;
 }
 
@@ -100,10 +100,10 @@ footer h5 {
   display: -ms-flexbox;
   display: flex;
   -ms-flex-pack: distribute;
-      justify-content: space-around;
+  justify-content: space-around;
   -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
   padding-left: 0;
 }
 
@@ -133,7 +133,7 @@ footer h5 {
 
 * {
   -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+  box-sizing: border-box;
 }
 
 body {
@@ -213,8 +213,8 @@ main .container .contactInfo {
   display: flex;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
   line-height: 0.2rem;
   padding-top: 10%;
   padding-bottom: 10%;
@@ -236,8 +236,8 @@ main .container .contactInfo .social_media-wrapper {
   display: flex;
   width: 50%;
   -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
   color: #0e902d;
   margin-bottom: 1.5rem;
 }
@@ -250,7 +250,7 @@ main .container .contactInfo .social_media-wrapper i:hover {
 main .container .formContainer .usermsg {
   top: -250px;
   -webkit-box-shadow: -15px 15px #f8e71c;
-          box-shadow: -15px 15px #f8e71c;
+  box-shadow: -15px 15px #f8e71c;
 }
 
 main .container .formContainer form {
@@ -262,11 +262,11 @@ main .container .formContainer form {
   display: flex;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
   -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
   background-color: white;
   padding: 30px;
 }
@@ -276,8 +276,8 @@ main .container .formContainer form .identification {
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
 }
 
 main .container .formContainer form input[type="text"],
@@ -301,7 +301,7 @@ main .container .formContainer form input[type="email"] placeholder {
 main .container .formContainer form input:focus {
   outline: none;
   -webkit-box-shadow: 2px solid #074115;
-          box-shadow: 2px solid #074115;
+  box-shadow: 2px solid #074115;
   -webkit-transition: 180ms -webkit-box-shadow ease-in-out;
   transition: 180ms -webkit-box-shadow ease-in-out;
   transition: 180ms box-shadow ease-in-out;
@@ -384,14 +384,13 @@ main .container .formContainer form button:hover {
     z-index: 50;
     height: 80px;
     -webkit-box-pack: justify;
-        -ms-flex-pack: justify;
-            justify-content: space-between;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
     padding-top: 5px;
     background-color: black;
     position: fixed;
   }
   .navbar #hamburger-icon {
-    margin-right: 10%;
     padding-right: 10%;
     cursor: pointer;
   }
@@ -403,8 +402,8 @@ main .container .formContainer form button:hover {
     display: -ms-flexbox;
     display: flex;
     -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
+    -ms-flex-align: center;
+    align-items: center;
   }
   .logo h2 {
     font-family: "Josefin Sans", sans-serif;
@@ -447,8 +446,8 @@ main .container .formContainer form button:hover {
   }
   .homeBackground .navbar {
     -webkit-box-pack: justify;
-        -ms-flex-pack: justify;
-            justify-content: space-between;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
     padding-top: 5px;
   }
   .homeBackground .navbar #hamburger-icon {
@@ -460,8 +459,8 @@ main .container .formContainer form button:hover {
     padding: 5px;
     width: 100%;
     -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
+    -ms-flex-pack: center;
+    justify-content: center;
   }
   .topNav ul {
     display: none;
@@ -469,8 +468,8 @@ main .container .formContainer form button:hover {
   main .container {
     -webkit-box-orient: vertical;
     -webkit-box-direction: reverse;
-        -ms-flex-direction: column-reverse;
-            flex-direction: column-reverse;
+    -ms-flex-direction: column-reverse;
+    flex-direction: column-reverse;
     height: auto;
   }
   main .container .contactInfo {
@@ -482,8 +481,8 @@ main .container .formContainer form button:hover {
   main .container form .identification {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
+    -ms-flex-direction: column;
+    flex-direction: column;
     width: 100%;
   }
   main .container form .identification input[type="text"],
