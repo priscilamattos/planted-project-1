@@ -214,6 +214,7 @@ main {
   @include mobile-menu;
   .homeBackground {
     height: 420px;
+    transition: 1s;
     .contactHeader {
       height: 420px;
       .sectionTitle {
@@ -236,18 +237,13 @@ main {
   }
   .blogwrapper {
     flex-direction: column;
+    padding-top: 5%;
     .blogPostImage {
       position: initial;
       margin: 0 auto;
     }
     aside {
-      width: 100%;
-      padding-top: 0;
-      background-color: $plantedwhite;
-      .aboutImageContainer {
-        position: initial;
-        margin: 0 auto;
-      }
+      display: none;
     }
     .blogPost {
       border-left: none;

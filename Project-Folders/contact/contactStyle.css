@@ -437,6 +437,8 @@ main .container .formContainer form button:hover {
   }
   .homeBackground {
     height: 420px;
+    -webkit-transition: 1s;
+    transition: 1s;
   }
   .homeBackground .sectionTitle h2 {
     font-size: 3rem;

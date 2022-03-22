@@ -543,6 +543,8 @@ main {
   }
   .homeBackground {
     height: 420px;
+    -webkit-transition: 1s;
+    transition: 1s;
   }
   .homeBackground .contactHeader {
     height: 420px;
@@ -563,19 +565,14 @@ main {
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
+    padding-top: 5%;
   }
   .blogwrapper .blogPostImage {
     position: initial;
     margin: 0 auto;
   }
   .blogwrapper aside {
-    width: 100%;
-    padding-top: 0;
-    background-color: #f0efed;
-  }
-  .blogwrapper aside .aboutImageContainer {
-    position: initial;
-    margin: 0 auto;
+    display: none;
   }
   .blogwrapper .blogPost {
     border-left: none;
