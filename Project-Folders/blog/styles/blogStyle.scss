@@ -212,6 +212,9 @@ main {
 // Media Style
 @media (max-width: 1200px) {
   @include mobile-menu;
+  .navbar #hamburger-icon {
+    margin-right: 10%;
+  }
   .homeBackground {
     height: 420px;
     transition: 1s;
