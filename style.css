@@ -5,7 +5,7 @@ body {
   margin: 0 auto;
   padding: 0;
   -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+  box-sizing: border-box;
 }
 
 body a {
@@ -52,11 +52,11 @@ footer h5 {
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
   -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
   padding: 0;
   padding-left: 10%;
 }
@@ -66,8 +66,8 @@ footer h5 {
   display: -ms-flexbox;
   display: flex;
   -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
 }
 
 .navbar .logo h2 {
@@ -87,11 +87,11 @@ footer h5 {
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: start;
-      -ms-flex-pack: start;
-          justify-content: flex-start;
+  -ms-flex-pack: start;
+  justify-content: flex-start;
   -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
   margin-left: 20px;
 }
 
@@ -100,10 +100,10 @@ footer h5 {
   display: -ms-flexbox;
   display: flex;
   -ms-flex-pack: distribute;
-      justify-content: space-around;
+  justify-content: space-around;
   -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
   padding-left: 0;
 }
 
@@ -133,7 +133,7 @@ footer h5 {
 
 * {
   -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+  box-sizing: border-box;
 }
 
 body {
@@ -170,8 +170,8 @@ header {
   position: relative;
   margin-top: -80px;
   -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
   pointer-events: none;
 }
 
@@ -208,7 +208,7 @@ header {
   display: block;
   position: relative;
   -o-object-fit: cover;
-     object-fit: cover;
+  object-fit: cover;
 }
 
 .aboutPlanted {
@@ -217,11 +217,11 @@ header {
   display: flex;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
   -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
   text-align: center;
   padding: 100px;
 }
@@ -270,11 +270,11 @@ article .firstBlogContainer {
   display: -ms-flexbox;
   display: flex;
   -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
   -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
   padding-bottom: 10px;
 }
 
@@ -286,7 +286,7 @@ article .firstBlogContainer .boxImg {
   padding: 0;
   width: 45%;
   -webkit-box-shadow: 15px 15px #f8e71c;
-          box-shadow: 15px 15px #f8e71c;
+  box-shadow: 15px 15px #f8e71c;
 }
 
 article .firstBlogContainer .boxImg img {
@@ -338,11 +338,11 @@ article .secondBlogContainer {
   display: -ms-flexbox;
   display: flex;
   -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
   -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
   padding-top: 10px;
 }
 
@@ -355,7 +355,7 @@ article .secondBlogContainer .boxImg {
   bottom: -50px;
   width: 45%;
   -webkit-box-shadow: -15px 15px #f8e71c;
-          box-shadow: -15px 15px #f8e71c;
+  box-shadow: -15px 15px #f8e71c;
 }
 
 article .secondBlogContainer .boxImg img {
@@ -410,11 +410,11 @@ article .secondBlogContainer .blogPost a:hover {
   display: flex;
   display: flex;
   -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
   -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
   background-color: white;
 }
 
@@ -425,8 +425,8 @@ article .secondBlogContainer .blogPost a:hover {
   display: flex;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
   margin-top: 100px;
   margin-bottom: 100px;
 }
@@ -436,8 +436,8 @@ article .secondBlogContainer .blogPost a:hover {
   display: -ms-flexbox;
   display: flex;
   -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
 }
 
 .servicesContainer .contentBox .services i::before {
@@ -492,7 +492,7 @@ article .secondBlogContainer .blogPost a:hover {
   width: 100%;
   height: 100%;
   -o-object-fit: cover;
-     object-fit: cover;
+  object-fit: cover;
 }
 
 .founderProfile .founderText {
@@ -501,13 +501,13 @@ article .secondBlogContainer .blogPost a:hover {
   display: flex;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
   width: 60%;
   padding-left: 5%;
   -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
 }
 
 .founderProfile .founderText h3 {
@@ -551,8 +551,8 @@ article .secondBlogContainer .blogPost a:hover {
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
 }
 
 .gallery img {
@@ -600,14 +600,13 @@ article .secondBlogContainer .blogPost a:hover {
     z-index: 50;
     height: 80px;
     -webkit-box-pack: justify;
-        -ms-flex-pack: justify;
-            justify-content: space-between;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
     padding-top: 5px;
     background-color: black;
     position: fixed;
   }
   .navbar #hamburger-icon {
-    margin-right: 10%;
     padding-right: 10%;
     cursor: pointer;
   }
@@ -619,8 +618,8 @@ article .secondBlogContainer .blogPost a:hover {
     display: -ms-flexbox;
     display: flex;
     -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
+    -ms-flex-align: center;
+    align-items: center;
   }
   .logo h2 {
     font-family: "Josefin Sans", sans-serif;
@@ -668,8 +667,8 @@ article .secondBlogContainer .blogPost a:hover {
   article .secondBlogContainer {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
+    -ms-flex-direction: column;
+    flex-direction: column;
   }
   article .firstBlogContainer .blogPost,
   article .secondBlogContainer .blogPost {
@@ -694,8 +693,8 @@ article .secondBlogContainer .blogPost a:hover {
   .servicesContainer {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
+    -ms-flex-direction: column;
+    flex-direction: column;
     padding-top: 100px;
     padding-bottom: 100px;
   }
@@ -715,8 +714,8 @@ article .secondBlogContainer .blogPost a:hover {
   .founderProfile {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
+    -ms-flex-direction: column;
+    flex-direction: column;
   }
   .founderProfile .founderText {
     width: 100%;
@@ -731,8 +730,8 @@ article .secondBlogContainer .blogPost a:hover {
   .gallery {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
+    -ms-flex-direction: column;
+    flex-direction: column;
   }
   .gallery img {
     width: 100%;
