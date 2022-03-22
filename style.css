@@ -732,5 +732,6 @@ article .secondBlogContainer .blogPost a:hover {
   }
   .gallery img {
     width: 100%;
+    padding-top: 30px;
   }
 }
