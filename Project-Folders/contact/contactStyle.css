@@ -347,6 +347,10 @@ main .container .formContainer form button:hover {
   background: #074115;
 }
 
+#topNavMobile {
+  display: none;
+}
+
 @media (max-width: 960px) {
   #topNavMobile {
     display: none;
@@ -425,7 +429,6 @@ main .container .formContainer form button:hover {
   #topNavMobile {
     display: none;
     text-align: end;
-    padding-right: 10%;
   }
   .menu {
     display: none !important;

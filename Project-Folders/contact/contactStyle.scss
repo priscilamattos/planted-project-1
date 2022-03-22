@@ -142,6 +142,9 @@ main {
     }
   }
 }
+#topNavMobile {
+  display: none;
+}
 
 //Media Style
 @media (max-width: 960px) {
@@ -149,7 +152,6 @@ main {
   #topNavMobile {
     display: none;
     text-align: end;
-    padding-right: 10%;
   }
 
   .menu {
