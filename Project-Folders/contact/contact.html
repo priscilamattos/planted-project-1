@@ -67,7 +67,7 @@
           <p>Toronto, Ontario</p>
         </div>
         <div class="formContainer">
-          <form class="usermsg">
+          <form class="usermsg" id="usermsg">
             <div class="identification">
               <label for="name" class="sr-only">Name</label>
               <input
@@ -91,14 +91,41 @@
                 aria-label="Write Your Message"
               ></textarea>
             </div>
-            <button>Submit</button>
+            <button
+              type="submit"
+              class="sendMessage"
+              onclick="getUserMessage(event)"
+            >
+              Submit
+            </button>
           </form>
+          <!-- Snackbar -->
+          <div id="snackbar">Message sent! Thank you.</div>
+          <!-- Contact Form Modal -->
+          <div id="modal" class="modal">
+            <div class="modalContainer">
+              <p>Please review your comment before submitting:</p>
+              <p>Name: <span id="confirmName"></span></p>
+              <p>Email: <span id="confirmEmail"></span></p>
+              <p>Message: <span id="confirmMessage"></span></p>
+              <div class="closeModal">
+                <button class="btnOne" id="modalCancel" onclick="cancelModal()">
+                  Cancel
+                </button>
+                <button class="btnTwo" id="modalClose" onclick="closeModal()">
+                  Confirm
+                </button>
+              </div>
+            </div>
+          </div>
         </div>
+        <!-- End of Contact Form Modal -->
       </div>
     </main>
     <footer>
       <h5>2022 - Juno College - Priscila Mattos - Cohort 40</h5>
     </footer>
     <script src="/planted.js"></script>
+    <script src="/contact.js"></script>
   </body>
 </html>
