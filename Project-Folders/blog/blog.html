@@ -145,25 +145,26 @@
             </div>
             <div class="formContainer">
               <form class="usermsg">
+                <label for="newComment">Add your comment below:</label>
                 <div class="identification">
-                  <label for="name" class="sr-only">Name</label>
+                  <label for="newName" class="sr-only">Name</label>
                   <input
                     type="text"
                     placeholder="Name"
-                    id="name"
+                    id="newName"
                     aria-label="Your Name"
                   />
-                  <label for="email" class="sr-only">Email</label>
+                  <label for="newEmail" class="sr-only">Email</label>
                   <input
                     type="email"
                     placeholder="Email address"
-                    id="email"
+                    id="newEmail"
                     aria-label="Email Address"
                   />
                 </div>
                 <div class="message">
                   <textarea
-                    id="sendComment"
+                    id="newComment"
                     placeholder="Comment"
                     name="sendComment"
                     aria-label="Send Your Comment"
@@ -172,7 +173,7 @@
                   >
                   </textarea>
                 </div>
-                <button>Post Comment</button>
+                <button onclick="postUserComment()">Post Comment</button>
               </form>
             </div>
           </div>
@@ -183,5 +184,6 @@
       <h5>2022 - Juno College - Priscila Mattos - Cohort 40</h5>
     </footer>
     <script src="/planted.js"></script>
+    <script src="/blog.js"></script>
   </body>
 </html>
