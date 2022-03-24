@@ -394,11 +394,11 @@ main {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+  padding-top: 30px;
 }
 
 .commentsContainer .formContainer form input[type="text"],
 .commentsContainer .formContainer form input[type="email"] {
-  padding-top: 50px;
   border: none;
   height: 40px;
   width: 48%;

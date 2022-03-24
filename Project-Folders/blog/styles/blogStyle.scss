@@ -163,10 +163,10 @@ main {
       .identification {
         display: flex;
         justify-content: space-between;
+        padding-top: 30px;
       }
       input[type="text"],
       input[type="email"] {
-        padding-top: 50px;
         border: none;
         height: 40px;
         width: 48%;
