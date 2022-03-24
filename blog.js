@@ -1,22 +1,50 @@
-//To get user's input - post comment button
-function postUserComment(event) {
+const postButton = document.getElementById("postComment");
+postButton.addEventListener("click", function (event) {
   event.preventDefault();
 
-  const commentAuthor = document.getElementById("newName").value;
-  const emailAuthor = document.getElementById("newEmail").value;
-  const authorComment = document.getElementById("newComment").value;
+  //get user insformation
+  const userName = document.getElementById("newName").value;
+  const userEmail = document.getElementById("newEmail").value;
+  const userComment = document.getElementById("newComment").value;
 
-  if (commentAuthor === "" || emailAuthor === "" || authorComment === "") {
-    alert("Please fill all field to post a comment");
-    return false;
-  } else if (validateEmail(userEmail)) {
-    alert("Please use a valid email address.");
-    return false;
-  }
+  //create a new div, date, name, image and comment
+  const newBox = document.createElement("div");
+  newBox.classList.add("blogComments");
+
+  newBox.innerHTML = `
+  <figure>
+    <img
+      src="./images/profile-image-${randomImage()}.jpg"
+      alt="User Profile Image"
+    />
+  </figure>
+  <div class="comment">
+    <h4>${getDate()} by ${userName}</h4>
+    <p>
+      ${userComment}
+    </p>
+  </div>
+`;
+
+  //get comment from textarea
+  const postedComment = document.getElementById("newCommentBox");
+  postedComment.append(newBox);
+  console.log({ postedComment });
+});
+
+//get a long date format
+function getDate() {
+  const dateOptions = {
+    weekday: "long",
+    year: "numeric",
+    month: "long",
+    day: "numeric",
+  };
+  const today = new Date();
+  return today.toLocaleDateString("en-US", dateOptions);
 }
 
-// To validade user's email
-const validateEmail = (email) => {
-  const validEmail = /^\S+@\S+\.\S+$/.test(email);
-  return !validEmail;
-};
+//get a random image
+function randomImage(min = 1, max = 3) {
+  return Math.floor(Math.random() * (max - min + 1) + min);
+}

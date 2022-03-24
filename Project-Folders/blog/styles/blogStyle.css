@@ -369,6 +369,11 @@ main {
   margin-top: 0;
 }
 
+.commentsContainer .blogComments figure img {
+  width: 90px;
+  height: 90px;
+}
+
 .commentsContainer .formContainer form {
   width: 100%;
   -webkit-box-orient: vertical;
