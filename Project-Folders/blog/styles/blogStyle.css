@@ -398,6 +398,7 @@ main {
 
 .commentsContainer .formContainer form input[type="text"],
 .commentsContainer .formContainer form input[type="email"] {
+  padding-top: 50px;
   border: none;
   height: 40px;
   width: 48%;
@@ -464,6 +465,15 @@ main {
 
 .commentsContainer .formContainer form button:hover {
   background: #074115;
+}
+
+.commentsContainer .formContainer .newComment {
+  font-family: "Josefin Sans", sans-serif;
+  font-size: 2rem;
+  letter-spacing: 0.063rem;
+  font-weight: 700;
+  color: #2c2c2c;
+  color: #074115;
 }
 
 .commentsContainer .footer {

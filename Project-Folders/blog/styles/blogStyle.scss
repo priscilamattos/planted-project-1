@@ -166,6 +166,7 @@ main {
       }
       input[type="text"],
       input[type="email"] {
+        padding-top: 50px;
         border: none;
         height: 40px;
         width: 48%;
@@ -205,6 +206,10 @@ main {
         width: 100%;
         border: none;
       }
+    }
+    .newComment {
+      @include blogh3;
+      color: $plantedDarkGreen;
     }
   }
 
